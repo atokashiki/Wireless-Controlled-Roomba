@@ -1,0 +1,1 @@
+vhdtdtfi -prj gyro_bluetooth -o C:/Users/CS152B/final_group_4/gyro_bluetooth/two_bit_counter.vhi -module two_bit_counter -template C:/Xilinx/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work two_bit_counter.vhd 

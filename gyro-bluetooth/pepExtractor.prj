@@ -1,0 +1,5 @@
+work	"Data_Converter.vhd"
+work	"GPIO_demo.vhd"
+work	"UART_TX_CTRL.vhd"
+work	"btn_debounce.vhd"
+work	"data_interpreter.vhd"

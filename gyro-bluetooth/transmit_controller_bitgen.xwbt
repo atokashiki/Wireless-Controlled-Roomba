@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.ncd
+OUTFILE=C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.bit
+FAMILY=Spartan6
+PART=xc6slx16-2csg324
+WORKINGDIR=C:\Users\CS152B\final_group_4\gyro_bluetooth
+LICENSE=ISE
+USER_INFO=203015155_203016297_210565169_528

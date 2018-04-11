@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/CS152B/final_group_4/gyro_bluetooth/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/CS152B/final_group_4/gyro_bluetooth/xst"
+elaborate
+-ifn display_controller.prj
+-ifmt mixed
