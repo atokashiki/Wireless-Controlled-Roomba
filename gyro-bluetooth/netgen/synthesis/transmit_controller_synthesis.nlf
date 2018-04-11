@@ -1,0 +1,21 @@
+Release 14.6 - netgen P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm transmit_controller -w
+-dir netgen/synthesis -ofmt vhdl -sim transmit_controller.ngc
+transmit_controller_synthesis.vhd  
+
+Reading design 'transmit_controller.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'C:\Users\CS152B\final_group_4\gyro_bluetooth\netgen\synthesis\transmit_controll
+er_synthesis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 137024 kilobytes

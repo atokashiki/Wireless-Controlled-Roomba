@@ -1,0 +1,123 @@
+V3 63
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/anode_decoder.vhd 2017/03/03.14:22:46 P.68d
+EN work/anode_decoder 1488930948 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/anode_decoder.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/anode_decoder/Behavioral 1488930949 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/anode_decoder.vhd \
+      EN work/anode_decoder 1488930948
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/btn_debounce.vhd 2017/02/24.15:02:44 P.68d
+EN work/btn_debounce 1488930960 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/btn_debounce.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/btn_debounce/Behavioral 1488930961 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/btn_debounce.vhd \
+      EN work/btn_debounce 1488930960
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/data_controller.vhd 2017/03/03.14:22:46 P.68d
+EN work/data_controller 1488930944 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/data_controller.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/data_controller/Behavioral 1488930945 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/data_controller.vhd \
+      EN work/data_controller 1488930944
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/data_select.vhd 2017/03/03.14:22:46 P.68d
+EN work/data_select 1488930958 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/data_select.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/data_select/Behavioral 1488930959 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/data_select.vhd \
+      EN work/data_select 1488930958
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/decimal_select.vhd 2017/03/03.14:22:46 P.68d
+EN work/decimal_select 1488930956 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/decimal_select.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/decimal_select/Behavioral 1488930957 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/decimal_select.vhd \
+      EN work/decimal_select 1488930956
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/digit_select.vhd 2017/03/03.14:22:46 P.68d
+EN work/digit_select 1488930954 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/digit_select.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/digit_select/Behavioral 1488930955 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/digit_select.vhd \
+      EN work/digit_select 1488930954
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/display_clk.vhd 2017/03/03.14:22:46 P.68d
+EN work/display_clk 1488930946 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/display_clk.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/display_clk/Behavioral 1488930947 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/display_clk.vhd \
+      EN work/display_clk 1488930946
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/display_controller.vhd 2017/03/07.15:33:58 P.68d
+EN work/display_controller 1488930968 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/display_controller.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/display_controller/Behavioral 1488930969 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/display_controller.vhd \
+      EN work/display_controller 1488930968 CP data_controller CP display_clk \
+      CP anode_decoder CP seven_seg_decoder CP two_bit_counter CP digit_select \
+      CP decimal_select CP data_select
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.vhd 2017/03/07.15:05:52 P.68d
+EN work/GPIO_demo 1488930972 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/GPIO_demo/Behavioral 1488930973 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.vhd \
+      EN work/GPIO_demo 1488930972 CP btn_debounce CP UART_TX_CTRL
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/master_interface.vhd 2017/03/03.14:22:46 P.68d
+EN work/master_interface 1488930964 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/master_interface.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/master_interface/Behavioral 1488930965 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/master_interface.vhd \
+      EN work/master_interface 1488930964
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/PmodGYRO_Demo.vhd 2017/03/07.15:30:37 P.68d
+EN work/PmodGYRO_Demo 1488930970 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/PmodGYRO_Demo.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/PmodGYRO_Demo/Behavioral 1488930971 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/PmodGYRO_Demo.vhd \
+      EN work/PmodGYRO_Demo 1488930970 CP master_interface CP spi_interface \
+      CP display_controller
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/seven_seg_decoder.vhd 2017/03/03.14:22:46 P.68d
+EN work/seven_seg_decoder 1488930950 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/seven_seg_decoder.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/seven_seg_decoder/Behavioral 1488930951 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/seven_seg_decoder.vhd \
+      EN work/seven_seg_decoder 1488930950
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/spi_interface.vhd 2017/03/03.14:22:46 P.68d
+EN work/spi_interface 1488930966 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/spi_interface.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/spi_interface/Behavioral 1488930967 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/spi_interface.vhd \
+      EN work/spi_interface 1488930966
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.vhd 2017/03/07.15:55:40 P.68d
+EN work/transmit_controller 1488930974 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.vhd \
+      PB ieee/std_logic_1164 1370735607
+AR work/transmit_controller/Behavioral 1488930975 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.vhd \
+      EN work/transmit_controller 1488930974 CP PmodGYRO_Demo CP GPIO_demo
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/two_bit_counter.vhd 2017/03/07.15:34:39 P.68d
+EN work/two_bit_counter 1488930952 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/two_bit_counter.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/std_logic_arith 1370735608 \
+      PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/two_bit_counter/Behavioral 1488930953 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/two_bit_counter.vhd \
+      EN work/two_bit_counter 1488930952
+FL C:/Users/CS152B/final_group_4/gyro_bluetooth/UART_TX_CTRL.vhd 2017/02/24.15:02:45 P.68d
+EN work/UART_TX_CTRL 1488930962 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/UART_TX_CTRL.vhd \
+      PB ieee/std_logic_1164 1370735607 PB ieee/STD_LOGIC_UNSIGNED 1370735609
+AR work/UART_TX_CTRL/Behavioral 1488930963 \
+      FL C:/Users/CS152B/final_group_4/gyro_bluetooth/UART_TX_CTRL.vhd \
+      EN work/UART_TX_CTRL 1488930962
