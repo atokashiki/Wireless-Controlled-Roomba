@@ -1,0 +1,52 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/CS152B/final_group_4/gyro_bluetooth/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/CS152B/final_group_4/gyro_bluetooth/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/data_controller.vhd" in Library work.
+Architecture behavioral of Entity data_controller is up to date.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/display_clk.vhd" in Library work.
+Architecture behavioral of Entity display_clk is up to date.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/anode_decoder.vhd" in Library work.
+Architecture behavioral of Entity anode_decoder is up to date.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/seven_seg_decoder.vhd" in Library work.
+Architecture behavioral of Entity seven_seg_decoder is up to date.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/two_bit_counter.vhd" in Library work.
+Entity <two_bit_counter> compiled.
+Entity <two_bit_counter> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/digit_select.vhd" in Library work.
+Architecture behavioral of Entity digit_select is up to date.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/decimal_select.vhd" in Library work.
+Architecture behavioral of Entity decimal_select is up to date.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/data_select.vhd" in Library work.
+Architecture behavioral of Entity data_select is up to date.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/display_controller.vhd" in Library work.
+Entity <display_controller> compiled.
+Entity <display_controller> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> 
+
+Total memory usage is 214120 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

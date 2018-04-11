@@ -1,0 +1,44 @@
+Release 14.6 Map P.68d (nt64)
+Xilinx Map Application Log File for Design 'GPIO_demo'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc5vlx50t-ff665-2 -w -logic_opt off -ol
+high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr
+off -lc off -power off -o GPIO_demo_map.ncd GPIO_demo.ngd GPIO_demo.pcf 
+Target Device  : xc5vlx50t
+Target Package : ff665
+Target Speed   : -2
+Mapper Version : virtex5 -- $Revision: 1.55 $
+Mapped Date    : Fri Mar 03 15:28:20 2017
+
+vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+INFO:Security:54 - 'xc5vlx50t' is a WebPack part.
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+----------------------------------------------------------------------
+Mapping design into LUTs...
+ERROR:MapLib:30 - LOC constraint C4 on BTN<2> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint B8 on BTN<4> is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint V10 on CLK is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint P11 on PMODBT_CTS is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint N9 on PMODBT_RST is invalid: No such site on
+   the device. To bypass this error set the environment variable
+   'XIL_MAP_LOCWARN'.
+ERROR:MapLib:30 - LOC constraint V12 on UART_TXD is invalid: No such site on the
+   device. To bypass this error set the environment variable 'XIL_MAP_LOCWARN'.
+
+Error found in mapping process, exiting...
+Errors found during the mapping phase.  Please see map report file for more
+details.  Output files will not be written.
+
+Design Summary
+--------------
+Number of errors   :   6
+Number of warnings :   0

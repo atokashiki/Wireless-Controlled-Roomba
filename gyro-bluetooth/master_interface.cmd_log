@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/master_interface.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/master_interface.syr" 

@@ -1,0 +1,582 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: GPIO_demo.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "GPIO_demo.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "GPIO_demo"
+Output Format                      : NGC
+Target Device                      : xc5vlx50t-2-ff665
+
+---- Source Options
+Top Module Name                    : GPIO_demo
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/btn_debounce.vhd" in Library work.
+Entity <btn_debounce> compiled.
+Entity <btn_debounce> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/UART_TX_CTRL.vhd" in Library work.
+Entity <UART_TX_CTRL> compiled.
+Entity <UART_TX_CTRL> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.vhd" in Library work.
+Entity <GPIO_demo> compiled.
+Entity <GPIO_demo> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <GPIO_demo> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <btn_debounce> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <UART_TX_CTRL> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <GPIO_demo> in library <work> (Architecture <Behavioral>).
+INFO:Xst:1433 - Contents of array <sendStr> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+INFO:Xst:2679 - Register <sendStr<3>> in unit <GPIO_demo> has a constant value of 01000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <sendStr<4>> in unit <GPIO_demo> has a constant value of 01010011 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <sendStr<5>> in unit <GPIO_demo> has a constant value of 01000101 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <sendStr<6>> in unit <GPIO_demo> has a constant value of 01010100 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <sendStr<7>> in unit <GPIO_demo> has a constant value of 00001010 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <sendStr<8>> in unit <GPIO_demo> has a constant value of 00001101 during circuit operation. The register is replaced by logic.
+Entity <GPIO_demo> analyzed. Unit <GPIO_demo> generated.
+
+Analyzing Entity <btn_debounce> in library <work> (Architecture <Behavioral>).
+Entity <btn_debounce> analyzed. Unit <btn_debounce> generated.
+
+Analyzing Entity <UART_TX_CTRL> in library <work> (Architecture <Behavioral>).
+Entity <UART_TX_CTRL> analyzed. Unit <UART_TX_CTRL> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <btn_debounce>.
+    Related source file is "C:/Users/CS152B/final_group_4/gyro_bluetooth/btn_debounce.vhd".
+    Found 16-bit up counter for signal <btn0_cntr>.
+    Found 1-bit xor2 for signal <btn0_cntr$xor0000> created at line 67.
+    Found 1-bit register for signal <btn0_reg>.
+    Found 16-bit up counter for signal <btn1_cntr>.
+    Found 1-bit xor2 for signal <btn1_cntr$xor0000> created at line 91.
+    Found 1-bit register for signal <btn1_reg>.
+    Found 16-bit up counter for signal <btn2_cntr>.
+    Found 1-bit xor2 for signal <btn2_cntr$xor0000> created at line 115.
+    Found 1-bit register for signal <btn2_reg>.
+    Found 16-bit up counter for signal <btn3_cntr>.
+    Found 1-bit xor2 for signal <btn3_cntr$xor0000> created at line 139.
+    Found 1-bit register for signal <btn3_reg>.
+    Found 16-bit up counter for signal <btn4_cntr>.
+    Found 1-bit xor2 for signal <btn4_cntr$xor0000> created at line 163.
+    Found 1-bit register for signal <btn4_reg>.
+    Summary:
+	inferred   5 Counter(s).
+	inferred   5 D-type flip-flop(s).
+Unit <btn_debounce> synthesized.
+
+
+Synthesizing Unit <UART_TX_CTRL>.
+    Related source file is "C:/Users/CS152B/final_group_4/gyro_bluetooth/UART_TX_CTRL.vhd".
+    Found finite state machine <FSM_0> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Power Up State     | rdy                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 31-bit up counter for signal <bitIndex>.
+    Found 14-bit up counter for signal <bitTmr>.
+    Found 1-bit register for signal <txBit>.
+    Found 10-bit register for signal <txData>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  11 D-type flip-flop(s).
+Unit <UART_TX_CTRL> synthesized.
+
+
+Synthesizing Unit <GPIO_demo>.
+    Related source file is "C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.vhd".
+INFO:Xst:1799 - State ld_btn_str is never reached in FSM <uartState>.
+    Found finite state machine <FSM_1> for signal <uartState>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 16                                             |
+    | Inputs             | 6                                              |
+    | Outputs            | 6                                              |
+    | Clock              | CLK                       (rising_edge)        |
+    | Reset              | btnDeBnc<4>               (positive)           |
+    | Reset type         | synchronous                                    |
+    | Reset State        | rst_reg                                        |
+    | Power Up State     | rst_reg                                        |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16x8-bit ROM for signal <SSEG_CA>.
+    Found 8-bit 9-to-1 multiplexer for signal <$varindex0000> created at line 373.
+    Found 4-bit register for signal <btnReg>.
+    Found 24-bit register for signal <sendStr<0:2>>.
+    Found 4-bit register for signal <strEnd>.
+    Found 31-bit up counter for signal <strIndex>.
+    Found 27-bit up counter for signal <tmrCntr>.
+    Found 4-bit up counter for signal <tmrVal>.
+    Found 8-bit register for signal <uartData>.
+    Found 1-bit register for signal <uartSend>.
+    Found 31-bit comparator equal for signal <uartState$cmp_eq0000> created at line 292.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   3 Counter(s).
+	inferred  41 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred   8 Multiplexer(s).
+Unit <GPIO_demo> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 10
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 5
+ 27-bit up counter                                     : 1
+ 31-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 14
+ 1-bit register                                        : 7
+ 10-bit register                                       : 1
+ 4-bit register                                        : 2
+ 8-bit register                                        : 4
+# Comparators                                          : 1
+ 31-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 8-bit 9-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_1> for best encoding.
+Optimizing FSM <uartState/FSM> on signal <uartState[1:10]> with one-hot encoding.
+----------------------------
+ State        | Encoding
+----------------------------
+ rst_reg      | 0000000001
+ ld_init_str  | 0000000010
+ send_char    | 0000000100
+ rdy_low      | 0000001000
+ wait_rdy     | 0000010000
+ wait_btn     | 0000100000
+ ld_btn_str   | unreached
+ ld_up_str    | 0001000000
+ ld_down_str  | 0010000000
+ ld_left_str  | 0100000000
+ ld_right_str | 1000000000
+----------------------------
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <Inst_UART_TX_CTRL/txState/FSM> on signal <txState[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ rdy      | 00
+ load_bit | 01
+ send_bit | 10
+----------------------
+WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <Inst_UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <txData_9> (without init value) has a constant value of 1 in block <Inst_UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_0_7> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_4> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_6> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_7> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_2_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_2_7> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_2> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 2
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 10
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 5
+ 27-bit up counter                                     : 1
+ 31-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 57
+ Flip-Flops                                            : 57
+# Comparators                                          : 1
+ 31-bit comparator equal                               : 1
+# Multiplexers                                         : 1
+ 8-bit 9-to-1 multiplexer                              : 1
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txData_9> (without init value) has a constant value of 1 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sendStr_0_7> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_4> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_6> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_7> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_2_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_2_7> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_2> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <uartData_7> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <GPIO_demo> ...
+WARNING:Xst:1710 - FF/Latch <sendStr_1_3> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <btn_debounce> ...
+
+Optimizing unit <UART_TX_CTRL> ...
+WARNING:Xst:1710 - FF/Latch <Inst_UART_TX_CTRL/txData_8> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block GPIO_demo, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 243
+ Flip-Flops                                            : 243
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : GPIO_demo.ngr
+Top Level Output File Name         : GPIO_demo
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 760
+#      GND                         : 1
+#      INV                         : 9
+#      LUT1                        : 174
+#      LUT2                        : 19
+#      LUT3                        : 44
+#      LUT4                        : 68
+#      LUT5                        : 34
+#      LUT6                        : 47
+#      MUXCY                       : 180
+#      VCC                         : 1
+#      XORCY                       : 183
+# FlipFlops/Latches                : 243
+#      FD                          : 106
+#      FDE                         : 14
+#      FDR                         : 43
+#      FDRE                        : 62
+#      FDS                         : 18
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 13
+#      OBUF                        : 23
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 5vlx50tff665-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             243  out of  28800     0%  
+ Number of Slice LUTs:                  395  out of  28800     1%  
+    Number used as Logic:               395  out of  28800     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    407
+   Number with an unused Flip Flop:     164  out of    407    40%  
+   Number with an unused LUT:            12  out of    407     2%  
+   Number of fully used LUT-FF pairs:   231  out of    407    56%  
+   Number of unique control sets:        15
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    360    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | BUFGP                  | 243   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 2.740ns (Maximum Frequency: 364.930MHz)
+   Minimum input arrival time before clock: 2.569ns
+   Maximum output required time after clock: 3.620ns
+   Maximum combinational path delay: 3.808ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 2.740ns (frequency: 364.930MHz)
+  Total number of paths / destination ports: 5354 / 441
+-------------------------------------------------------------------------
+Delay:               2.740ns (Levels of Logic = 2)
+  Source:            Inst_btn_debounce/btn1_cntr_10 (FF)
+  Destination:       Inst_btn_debounce/btn1_cntr_15 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: Inst_btn_debounce/btn1_cntr_10 to Inst_btn_debounce/btn1_cntr_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.396   0.905  Inst_btn_debounce/btn1_cntr_10 (Inst_btn_debounce/btn1_cntr_10)
+     LUT6:I0->O            2   0.086   0.491  Inst_btn_debounce/btn1_reg_cmp_eq000026 (Inst_btn_debounce/btn1_reg_cmp_eq000026)
+     LUT6:I4->O            6   0.086   0.309  Inst_btn_debounce/btn1_cntr_or00001 (Inst_btn_debounce/btn1_cntr_or0000)
+     FDR:R                     0.468          Inst_btn_debounce/btn1_cntr_10
+    ----------------------------------------
+    Total                      2.740ns (1.036ns logic, 1.704ns route)
+                                       (37.8% logic, 62.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 111 / 111
+-------------------------------------------------------------------------
+Offset:              2.569ns (Levels of Logic = 2)
+  Source:            BTN<4> (PAD)
+  Destination:       Inst_btn_debounce/btn4_cntr_15 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: BTN<4> to Inst_btn_debounce/btn4_cntr_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   0.694   1.012  BTN_4_IBUF (BTN_4_IBUF)
+     LUT6:I0->O            6   0.086   0.309  Inst_btn_debounce/btn4_cntr_or00001 (Inst_btn_debounce/btn4_cntr_or0000)
+     FDR:R                     0.468          Inst_btn_debounce/btn4_cntr_10
+    ----------------------------------------
+    Total                      2.569ns (1.248ns logic, 1.321ns route)
+                                       (48.6% logic, 51.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 33 / 12
+-------------------------------------------------------------------------
+Offset:              3.620ns (Levels of Logic = 2)
+  Source:            tmrVal_0 (FF)
+  Destination:       SSEG_CA<4> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: tmrVal_0 to SSEG_CA<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              11   0.396   0.708  tmrVal_0 (tmrVal_0)
+     LUT4:I0->O            1   0.086   0.286  Mrom_SSEG_CA41 (SSEG_CA_4_OBUF)
+     OBUF:I->O                 2.144          SSEG_CA_4_OBUF (SSEG_CA<4>)
+    ----------------------------------------
+    Total                      3.620ns (2.626ns logic, 0.994ns route)
+                                       (72.5% logic, 27.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 20 / 12
+-------------------------------------------------------------------------
+Delay:               3.808ns (Levels of Logic = 3)
+  Source:            BTN<4> (PAD)
+  Destination:       LED<7> (PAD)
+
+  Data Path: BTN<4> to LED<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            54   0.694   0.598  BTN_4_IBUF (BTN_4_IBUF)
+     LUT2:I0->O            1   0.086   0.286  LED<7>1 (LED_7_OBUF)
+     OBUF:I->O                 2.144          LED_7_OBUF (LED<7>)
+    ----------------------------------------
+    Total                      3.808ns (2.924ns logic, 0.884ns route)
+                                       (76.8% logic, 23.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.04 secs
+ 
+--> 
+
+Total memory usage is 299304 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   23 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

@@ -1,0 +1,500 @@
+## This file is a general .ucf for Genesys rev C board
+## To use it in a project:
+## - remove or comment the lines corresponding to unused pins
+## - rename the used signals according to the project
+#
+#
+## clock pin for Genesys rev C board
+ NET "CLK"   LOC = "AG18"  |  IOSTANDARD=LVCMOS33; # Bank = 4, Pin name = IO_L6P_GC_4, Type = GCLK, Sch name = GCLK0
+#
+## onBoard USB controller
+# NET "EppAstb"   LOC = "B13"; # Bank = 20, Pin name = IO_L11P_CC_20,    Sch name = U1-FLAGA
+# NET "EppDstb"   LOC = "A13"; # Bank = 20, Pin name = IO_L8P_CC_20,     Sch name = U1-FLAGB
+# NET "UsbFlag"   LOC = "K8";  # Bank = 20, Pin name = IO_L11P_CC_20,    Sch name = U1-FLAGC
+# NET "EppWait"   LOC = "N10"; # Bank = 20, Pin name = IO_L18P_20,       Sch name = U1-SLRD
+# NET "EppDB<0>"  LOC = "G12"; # Bank = 20, Pin name = IO_L13N_20,       Sch name = U1-FD0
+# NET "EppDB<1>"  LOC = "G11"; # Bank = 20, Pin name = IO_L13P_20,       Sch name = U1-FD1
+# NET "EppDB<2>"  LOC = "G13"; # Bank = 20, Pin name = IO_L19N_20,       Sch name = U1-FD2
+# NET "EppDB<3>"  LOC = "L10"; # Bank = 20, Pin name = IO_L12P_VRN_20,   Sch name = U1-FD3
+# NET "EppDB<4>"  LOC = "K9";  # Bank = 20, Pin name = IO_L10N_CC_20,    Sch name = U1-FD4
+# NET "EppDB<5>"  LOC = "L9";  # Bank = 20, Pin name = IO_L16N_20,       Sch name = U1-FD5
+# NET "EppDB<6>"  LOC = "C13"; # Bank = 20, Pin name = IO_L11N_CC_20,    Sch name = U1-FD6
+# NET "EppDB<7>"  LOC = "E13"; # Bank = 20, Pin name = IO_L17N_20,       Sch name = U1-FD7
+#
+# NET "UsbClk"    LOC = "J10"; # Bank = 20, Pin name = IO_L9P_CC_20,     Sch name = U1-IFCLK 
+# NET "UsbOE"     LOC = "F11"; # Bank = 20, Pin name = IO_L15P_20,       Sch name = U1-SLOE
+# NET "UsbWR"     LOC = "M10"; # Bank = 20, Pin name = IO_L16P_20,       Sch name = U1-SLWR
+# NET "UsbPktEnd" LOC = "M8";  # Bank = 20, Pin name = IO_L14P_20,       Sch name = U1-PKTEND
+# NET "UsbDir"    LOC = "N9";  # Bank = 20, Pin name = IO_L18N_20,       Sch name = U1-SLCS
+# NET "UsbMode"   LOC = "E11"; # Bank = 20, Pin name = IO_L15N_20,       Sch name = U1-INT0#
+# 
+# NET "UsbAdr<0>" LOC = "L11"; # Bank = 20, Pin name = IO_L12N_VRP_20,   Sch name = U1-FIFOAD0
+# NET "UsbAdr<1>" LOC = "L8";  # Bank = 20, Pin name = IO_L14N_VREF_20,  Sch name = U1-FIFOAD1
+#
+## onBoard StrataFlash
+# NET "FlashMemAdr<0>"   LOC = "K12";  # Bank = 1,  Pin name = IO_L9N_CC_A0_D16_1,      Sch name = P30-A0
+# NET "FlashMemAdr<1>"   LOC = "K13";  # Bank = 1,  Pin name = IO_L9P_CC_A1_D17_1,      Sch name = P30-A1
+# NET "FlashMemAdr<2>"   LOC = "H23";  # Bank = 1,  Pin name = IO_L8N_CC_A2_D18_1,      Sch name = P30-A2
+# NET "FlashMemAdr<3>"   LOC = "G23";  # Bank = 1,  Pin name = IO_L8P_CC_A3_D19_1,      Sch name = P30-A3
+# NET "FlashMemAdr<4>"   LOC = "H12";  # Bank = 1,  Pin name = IO_L7N_A4_D20_1,         Sch name = P30-A4
+# NET "FlashMemAdr<5>"   LOC = "J12";  # Bank = 1,  Pin name = IO_L7P_A5_D21_1,         Sch name = P30-A5
+# NET "FlashMemAdr<6>"   LOC = "K22";  # Bank = 1,  Pin name = IO_L6N_A6_D22_1,         Sch name = P30-A6
+# NET "FlashMemAdr<7>"   LOC = "K23";  # Bank = 1,  Pin name = IO_L6P_A7_D23_1,         Sch name = P30-A7
+# NET "FlashMemAdr<8>"   LOC = "K14";  # Bank = 1,  Pin name = IO_L5N_A8_D24_1,         Sch name = P30-A8
+# NET "FlashMemAdr<9>"   LOC = "L14";  # Bank = 1,  Pin name = IO_L5P_A9_D25_1,         Sch name = P30-A9
+# NET "FlashMemAdr<10>"  LOC = "H22";  # Bank = 1,  Pin name = IO_L4N_VREF_A10_D26_1,   Sch name = P30-A10
+# NET "FlashMemAdr<11>"  LOC = "G22";  # Bank = 1,  Pin name = IO_L4P_A11_D27_1,        Sch name = P30-A11
+# NET "FlashMemAdr<12>"  LOC = "J15";  # Bank = 1,  Pin name = IO_L3N_A12_D28_1,        Sch name = P30-A12
+# NET "FlashMemAdr<13>"  LOC = "K16";  # Bank = 1,  Pin name = IO_L3P_A13_D29_1,        Sch name = P30-A13
+# NET "FlashMemAdr<14>"  LOC = "K21";  # Bank = 1,  Pin name = IO_L2N_A14_D30_1,        Sch name = P30-A14
+# NET "FlashMemAdr<15>"  LOC = "J22";  # Bank = 1,  Pin name = IO_L2P_A15_D31_1,        Sch name = P30-A15
+# NET "FlashMemAdr<16>"  LOC = "L16";  # Bank = 1,  Pin name = IO_L1N_A16_1,            Sch name = P30-A16
+# NET "FlashMemAdr<17>"  LOC = "L15";  # Bank = 1,  Pin name = IO_L1P_A17_1,            Sch name = P30-A17
+# NET "FlashMemAdr<18>"  LOC = "L20";  # Bank = 1,  Pin name = IO_L0N_A18_1,            Sch name = P30-A18
+# NET "FlashMemAdr<19>"  LOC = "L21";  # Bank = 1,  Pin name = IO_L0P_A19_1,            Sch name = P30-A19
+# NET "FlashMemAdr<20>"  LOC = "AE23"; # Bank = 2,  Pin name = IO_L3N_A20_2,            Sch name = P30-A20
+# NET "FlashMemAdr<21>"  LOC = "AE22"; # Bank = 2,  Pin name = IO_L3P_A21_2,            Sch name = P30-A21
+# NET "FlashMemAdr<22>"  LOC = "AG12"; # Bank = 2,  Pin name = IO_L2N_A22_2,            Sch name = P30-A22
+# NET "FlashMemAdr<23>"  LOC = "AF13"; # Bank = 2,  Pin name = IO_L2P_A23_2,            Sch name = P30-A23
+# NET "FlashMemAdr<24>"  LOC = "AG23"; # Bank = 2,  Pin name = IO_L1N_CC_A24_2,         Sch name = P30-A24
+# 
+# NET "FlashMemDq<0>"   LOC = "AD19"; # Bank = 2,  Pin name = IO_L9N_D0_FS0_2,         Sch name = P30-DQ0
+# NET "FlashMemDq<1>"   LOC = "AE19"; # Bank = 2,  Pin name = IO_L9P_D1_FS1_2,         Sch name = P30-DQ1
+# NET "FlashMemDq<2>"   LOC = "AE17"; # Bank = 2,  Pin name = IO_L8N_D2_FS2_2,         Sch name = P30-DQ2
+# NET "FlashMemDq<3>"   LOC = "AF16"; # Bank = 2,  Pin name = IO_L8P_D3_2,             Sch name = P30-DQ3
+# NET "FlashMemDq<4>"   LOC = "AD20"; # Bank = 2,  Pin name = IO_L7N_D4_2,             Sch name = P30-DQ4
+# NET "FlashMemDq<5>"   LOC = "AE21"; # Bank = 2,  Pin name = IO_L7P_D5_2,             Sch name = P30-DQ5
+# NET "FlashMemDq<6>"   LOC = "AE16"; # Bank = 2,  Pin name = IO_L6N_D6_2,             Sch name = P30-DQ6
+# NET "FlashMemDq<7>"   LOC = "AF15"; # Bank = 2,  Pin name = IO_L6P_D7_2,             Sch name = P30-DQ7
+# NET "FlashMemDq<8>"   LOC = "AH13"; # Bank = 4,  Pin name = IO_L3N_GC_D8_4,          Sch name = P30-DQ8
+# NET "FlashMemDq<9>"   LOC = "AH14"; # Bank = 4,  Pin name = IO_L3P_GC_D9_4,          Sch name = P30-DQ9
+# NET "FlashMemDq<10>"  LOC = "AH19"; # Bank = 4,  Pin name = IO_L2N_GC_D10_4,         Sch name = P30-DQ10
+# NET "FlashMemDq<11>"  LOC = "AH20"; # Bank = 4,  Pin name = IO_L2P_GC_D11_4,         Sch name = P30-DQ11
+# NET "FlashMemDq<12>"  LOC = "AG13"; # Bank = 4,  Pin name = IO_L1N_GC_D12_4,         Sch name = P30-DQ12
+# NET "FlashMemDq<13>"  LOC = "AH12"; # Bank = 4,  Pin name = IO_L1P_GC_D13_4,         Sch name = P30-DQ13
+# NET "FlashMemDq<14>"  LOC = "AH22"; # Bank = 4,  Pin name = IO_L0N_GC_D14_4,         Sch name = P30-DQ14
+# NET "FlashMemDq<15>"  LOC = "AG22"; # Bank = 4,  Pin name = IO_L0P_GC_D15_4,         Sch name = P30-DQ15
+# 
+# NET "FlashCEN"   LOC = "AE14"; # Bank = 2,  Pin name = IO_L4P_FCS_B_2,            Sch name = P30-CE
+# NET "FlashOEN"   LOC = "AF14"; # Bank = 2,  Pin name = IO_L4N_VREF_FOE_B_MOSI_2,  Sch name = P30-OE
+# NET "FlashWEN"   LOC = "AF20"; # Bank = 2,  Pin name = IO_L5P_FWE_B_2,            Sch name = P30-WE
+# NET "FlashADVN"  LOC = "AF21"; # Bank = 2,  Pin name = IO_L5N_CSO_B_2,            Sch name = P30-ADV
+# NET "FlashRSTN"  LOC = "AG17"; # Bank = 4,  Pin name = IO_L9N_CC_GC_4,            Sch name = P30-RST
+# NET "FlashWAIT"  LOC = "AH18"; # Bank = 4,  Pin name = IO_L9P_CC_GC_4,            Sch name = P30-WAIT
+# NET "FlashCLK"   LOC = "AG21"; # Bank = 4,  Pin name = IO_L4P_GC_4,               Sch name = P30-CLK
+# 
+## onBoard Leds
+# NET "Led<0>"  LOC = "AG8";  # Bank = 22, Pin name = IO_L18P_22,     Sch name = LD0
+# NET "Led<1>"  LOC = "AH8";  # Bank = 22, Pin name = IO_L18N_22,     Sch name = LD1
+# NET "Led<2>"  LOC = "AH9";  # Bank = 22, Pin name = IO_L17P_22,     Sch name = LD2
+# NET "Led<3>"  LOC = "AG10"; # Bank = 22, Pin name = IO_L19P_22,     Sch name = LD3
+# NET "Led<4>"  LOC = "AH10"; # Bank = 22, Pin name = IO_L17N_22,     Sch name = LD4
+# NET "Led<5>"  LOC = "AG11"; # Bank = 22, Pin name = IO_L19N_22,     Sch name = LD5
+# NET "Led<6>"  LOC = "AF11"; # Bank = 22, Pin name = IO_L16P_22,     Sch name = LD6
+# NET "Led<7>"  LOC = "AE11"; # Bank = 22, Pin name = IO_L16N_22,     Sch name = LD7
+# 
+## onBoard PUSH BUTTONS 
+# NET "btn<0>" LOC = "G6";  # Bank = 12, Pin name = IO_L17P_12,        Sch name = BTN0
+# NET "btn<1>" LOC = "G7";  # Bank = 12, Pin name = IO_L17N_12,        Sch name = BTN1
+ NET "BTN<3>" LOC = "E6"  |  IOSTANDARD=LVCMOS33;  # Bank = 12, Pin name = IO_L19P_12,        Sch name = BTNU
+# NET "BTN<0>" LOC = "J17"; # Bank = 3,  Pin name = IO_L4N_GC_VREF_3,  Sch name = BTNR
+# NET "BTN<1>" LOC = "H15"; # Bank = 3,  Pin name = IO_L6N_GC_3,       Sch name = BTND
+# NET "BTN<2>" LOC = "K19"; # Bank = 3,  Pin name = IO_L5N_GC_3,       Sch name = BTNL
+ NET "BTN<4>" LOC = "J21"  |  IOSTANDARD=LVCMOS33; # Bank = 3,  Pin name = IO_L7N_GC_3,       Sch name = BTNS
+# 
+## onBoard SWITCHES
+# NET "sw<0>" LOC = "J19"; # Bank = 3, Pin name = IO_L3N_GC_3,      Sch name = SW0
+# NET "sw<1>" LOC = "L18"; # Bank = 3, Pin name = IO_L1N_CC_GC_3,   Sch name = SW1
+# NET "sw<2>" LOC = "K18"; # Bank = 3, Pin name = IO_L3P_GC_3,      Sch name = SW2
+# NET "sw<3>" LOC = "H18"; # Bank = 3, Pin name = IO_L0N_CC_GC_3,   Sch name = SW3
+# NET "sw<4>" LOC = "H17"; # Bank = 3, Pin name = IO_L0P_CC_GC_3,   Sch name = SW4
+# NET "sw<5>" LOC = "K17"; # Bank = 3, Pin name = IO_L1P_CC_GC_3,   Sch name = SW5
+# NET "sw<6>" LOC = "G16"; # Bank = 3, Pin name = IO_L2N_GC_VRP_3,  Sch name = SW6
+# NET "sw<7>" LOC = "G15"; # Bank = 3, Pin name = IO_L2P_GC_VRN_3,  Sch name = SW7
+#
+## TEMAC Ethernet MAC
+# NET "phyrst"     LOC = "L4";   # Bank = 12, Pin name = IO_L4P_12,      Sch name = E-RESET  
+# NET "phytxclk"   LOC = "J16";  # Bank = 3,  Pin name = IO_L4P_GC_3,    Sch name = E-TXCLK 
+#
+# NET "phyTXD<0>"  LOC = "J5";   # Bank = 12, Pin name = IO_L8N_CC_12,   Sch name = E-TXD0
+# NET "phyTXD<1>"  LOC = "G5";   # Bank = 12, Pin name = IO_L13N_12,     Sch name = E-TXD1
+# NET "phyTXD<2>"  LOC = "F5";   # Bank = 12, Pin name = IO_L15P_12,     Sch name = E-TXD2
+# NET "phyTXD<3>"  LOC = "R7";   # Bank = 12, Pin name = IO_L9P_CC_12,   Sch name = E-TXD3
+# NET "phyTXD<4>"  LOC = "T8";   # Bank = 12, Pin name = IO_L10P_CC_12,  Sch name = E-TXD4
+# NET "phyTXD<5>"  LOC = "R11";  # Bank = 12, Pin name = IO_L14P_12,     Sch name = E-TXD5
+# NET "phyTXD<6>"  LOC = "T11";  # Bank = 12, Pin name = IO_L16N_12,     Sch name = E-TXD6
+# NET "phyTXD<7>"  LOC = "U7";   # Bank = 12, Pin name = IO_L10N_CC_12,  Sch name = E-TXD7
+#
+# NET "phytxen"    LOC = "T10";  # Bank = 12, Pin name = IO_L16P_12,     Sch name = E-TXEN
+# NET "phytxer"    LOC = "R8";   # Bank = 12, Pin name = IO_L9N_CC_12,   Sch name = E-TXER
+# NET "phygtxclk"  LOC = "J20";  # Bank = 3,  Pin name = IO_L7P_GC_3,    Sch name = E-GTXCLK
+#
+# NET "phyRXD<0>"  LOC = "N7";   # Bank = 12, Pin name = IO_L1N_12,      Sch name = E-RXD0
+# NET "phyRXD<1>"  LOC = "R6";   # Bank = 12, Pin name = IO_L7P_12,      Sch name = E-RXD1
+# NET "phyRXD<2>"  LOC = "P6";   # Bank = 12, Pin name = IO_L5N_12,      Sch name = E-RXD2
+# NET "phyRXD<3>"  LOC = "P5";   # Bank = 12, Pin name = IO_L3N_12,      Sch name = E-RXD3
+# NET "phyRXD<4>"  LOC = "M7";   # Bank = 12, Pin name = IO_L2P_12,      Sch name = E-RXD4
+# NET "phyRXD<5>"  LOC = "M6";   # Bank = 12, Pin name = IO_L0P_12,      Sch name = E-RXD5
+# NET "phyRXD<6>"  LOC = "M5";   # Bank = 12, Pin name = IO_L0N_12,      Sch name = E-RXD6
+# NET "phyRXD<7>"  LOC = "L6";   # Bank = 12, Pin name = IO_L2N_12,      Sch name = E-RDX7
+#
+# NET "phyrxdv"    LOC = "N8";   # Bank = 12, Pin name = IO_L1P_12,      Sch name = E-RXDV
+# NET "phyrxer"    LOC = "P7";   # Bank = 12, Pin name = IO_L5P_12,      Sch name = E-RXER
+# NET "phyrxclk"   LOC = "L19";  # Bank = 3,  Pin name = IO_L5P_GC_3,    Sch name = E-RXCLK
+# NET "phymdc"     LOC = "N5";   # Bank = 12, Pin name = IO_L3P_12,      Sch name = E-MDC
+# NET "phymdi"     LOC = "U10";  # Bank = 12, Pin name = IO_L18N_12,     Sch name = E-MDIO
+# NET "phyint"     LOC = "T6";   # Bank = 12, Pin name = IO_L7N_12,      Sch name = E-INT
+# 
+## DDR2
+# NET "DDR2CLK0"   LOC="AK29";   # Bank = 21, Pin name = IO_L9P_CC_21,     Sch name = DDR-CK0   
+# NET "DDR2CLK1"   LOC="E28";    # Bank = 19, Pin name = IO_L10P_CC_19,    Sch name = DDR-CK1    
+# NET "DDR2CLKN0"  LOC="AJ29";   # Bank = 21, Pin name = IO_L9N_CC_21,     Sch name = DDR-CK0#   
+# NET "DDR2CLKN1"  LOC="F28";    # Bank = 19, Pin name = IO_L10N_CC_19,    Sch name = DDR-CK1#  
+# NET "DDR2CE0"    LOC="T28";    # Bank = 15, Pin name = IO_L15P_15,       Sch name = DDR-CKE0   
+# NET "DDR2CE1"    LOC="U30";    # Bank = 15, Pin name = IO_L14P_15,       Sch name = DDR-CKE1   
+# NET "DDR2CSN0"   LOC="L29";    # Bank = 15, Pin name = IO_L4P_15,        Sch name = DDR-S0   
+# NET "DDR2CSN1"   LOC="J29";    # Bank = 15, Pin name = IO_L2N_15,        Sch name = DDR-S1   
+# NET "DDR2ODT0"   LOC="F31";    # Bank = 15, Pin name = IO_L3P_15,        Sch name = DDR-ODT0   
+# NET "DDR2ODT1"   LOC="F30";    # Bank = 15, Pin name = IO_L1N_15,        Sch name = DDR-ODT1   
+# NET "DDR2RASN"   LOC="H30";    # Bank = 15, Pin name = IO_L5P_15,        Sch name = DDR-RAS   
+# NET "DDR2CASN"   LOC="E31";    # Bank = 15, Pin name = IO_L3N_15,        Sch name = DDR-CAS  
+# NET "DDR2WEN"    LOC="K29";    # Bank = 15, Pin name = IO_L4N_VREF_15,   Sch name = DDR-WE   
+# NET "DDR2BA0"    LOC="G31";    # Bank = 15, Pin name = IO_L5N_15,        Sch name = DDR-BA0   
+# NET "DDR2BA1"    LOC="J30";    # Bank = 15, Pin name = IO_L6P_15,        Sch name = DDR-BA1
+# NET "DDR2BA2"    LOC="R31";    # Bank = 15, Pin name = IO_L13N_15,       Sch name = DDR-BA2   
+# NET "DDR2A0"     LOC="L30";    # Bank = 15, Pin name = IO_L7P_15,        Sch name = DDR-A0   
+# NET "DDR2A1"     LOC="M30";    # Bank = 15, Pin name = IO_L7N_15,        Sch name = DDR-A1   
+# NET "DDR2A2"     LOC="N29";    # Bank = 15, Pin name = IO_L8P_CC_15,     Sch name = DDR-A2   
+# NET "DDR2A3"     LOC="P29";    # Bank = 15, Pin name = IO_L8N_CC_15,     Sch name = DDR-A3   
+# NET "DDR2A4"     LOC="K31";    # Bank = 15, Pin name = IO_L9P_CC_15,     Sch name = DDR-A4   
+# NET "DDR2A5"     LOC="L31";    # Bank = 15, Pin name = IO_L9N_CC_15,     Sch name = DDR-A5  
+# NET "DDR2A6"     LOC="P31";    # Bank = 15, Pin name = IO_L10P_CC_15,    Sch name = DDR-A6   
+# NET "DDR2A7"     LOC="P30";    # Bank = 15, Pin name = IO_L10N_CC_15,    Sch name = DDR-A7  
+# NET "DDR2A8"     LOC="M31";    # Bank = 15, Pin name = IO_L11P_CC_15,    Sch name = DDR-A8   
+# NET "DDR2A9"     LOC="R28";    # Bank = 15, Pin name = IO_L12P_VRN_15,   Sch name = DDR-A9   
+# NET "DDR2A10"    LOC="J31";    # Bank = 15, Pin name = IO_L6N_15,        Sch name = DDR-A10   
+# NET "DDR2A11"    LOC="R29";    # Bank = 15, Pin name = IO_L12N_VRP_15,   Sch name = DDR-A11   
+# NET "DDR2A12"    LOC="T31";    # Bank = 15, Pin name = IO_L13P_15,       Sch name = DDR-A12  
+# NET "DDR2DQ0"    LOC="AF30";   # Bank = 17, Pin name = IO_L17N_17,       Sch name = DDR-DQ0   
+# NET "DDR2DQ1"    LOC="AK31";   # Bank = 17, Pin name = IO_L16N_17,       Sch name = DDR-DQ1   
+# NET "DDR2DQ2"    LOC="AF31";   # Bank = 17, Pin name = IO_L14P_17,       Sch name = DDR-DQ2   
+# NET "DDR2DQ3"    LOC="AD30";   # Bank = 17, Pin name = IO_L13P_17,       Sch name = DDR-DQ3   
+# NET "DDR2DQ4"    LOC="AJ30";   # Bank = 17, Pin name = IO_L18P_17,       Sch name = DDR-DQ4   
+# NET "DDR2DQ5"    LOC="AF29";   # Bank = 17, Pin name = IO_L17P_17,       Sch name = DDR-DQ5   
+# NET "DDR2DQ6"    LOC="AD29";   # Bank = 17, Pin name = IO_L15N_17,       Sch name = DDR-DQ6   
+# NET "DDR2DQ7"    LOC="AE29";   # Bank = 17, Pin name = IO_L15P_17,       Sch name = DDR-DQ7   
+# NET "DDR2DQ8"    LOC="AH27";   # Bank = 21, Pin name = IO_L11P_CC_21,    Sch name = DDR-DQ8   
+# NET "DDR2DQ9"    LOC="AF28";   # Bank = 21, Pin name = IO_L7N_21,        Sch name = DDR-DQ9   
+# NET "DDR2DQ10"   LOC="AH28";   # Bank = 21, Pin name = IO_L6N_21,        Sch name = DDR-DQ10   
+# NET "DDR2DQ11"   LOC="AA28";   # Bank = 21, Pin name = IO_L5N_21,        Sch name = DDR-DQ11   
+# NET "DDR2DQ12"   LOC="AG25";   # Bank = 21, Pin name = IO_L13N_21,       Sch name = DDR-DQ12   
+# NET "DDR2DQ13"   LOC="AJ26";   # Bank = 21, Pin name = IO_L11N_CC_21,    Sch name = DDR-DQ13   
+# NET "DDR2DQ14"   LOC="AG28";   # Bank = 21, Pin name = IO_L6P_21,        Sch name = DDR-DQ14   
+# NET "DDR2DQ15"   LOC="AB28";   # Bank = 21, Pin name = IO_L5P_21,        Sch name = DDR-DQ15  
+# NET "DDR2DQ16"   LOC="AC28";   # Bank = 21, Pin name = IO_L4P_21,        Sch name = DDR-DQ16  
+# NET "DDR2DQ17"   LOC="AB25";   # Bank = 21, Pin name = IO_L3P_21,        Sch name = DDR-DQ17   
+# NET "DDR2DQ18"   LOC="AC27";   # Bank = 21, Pin name = IO_L1N_21,        Sch name = DDR-DQ18   
+# NET "DDR2DQ19"   LOC="AA26";   # Bank = 21, Pin name = IO_L0N_21,        Sch name = DDR-DQ19   
+# NET "DDR2DQ20"   LOC="AB26";   # Bank = 21, Pin name = IO_L3N_21,        Sch name = DDR-DQ20 
+# NET "DDR2DQ21"   LOC="AA24";   # Bank = 21, Pin name = IO_L2N_21,        Sch name = DDR-DQ21   
+# NET "DDR2DQ22"   LOC="AB27";   # Bank = 21, Pin name = IO_L1P_21,        Sch name = DDR-DQ22   
+# NET "DDR2DQ23"   LOC="AA25";   # Bank = 21, Pin name = IO_L0P_21,        Sch name = DDR-DQ23   
+# NET "DDR2DQ24"   LOC="AC29";   # Bank = 17, Pin name = IO_L13N_17,       Sch name = DDR-DQ24   
+# NET "DDR2DQ25"   LOC="AB30";   # Bank = 17, Pin name = IO_L10P_CC_17,    Sch name = DDR-DQ25   
+# NET "DDR2DQ26"   LOC="W31";    # Bank = 17, Pin name = IO_L6P_17,        Sch name = DDR-DQ26  
+# NET "DDR2DQ27"   LOC="V30";    # Bank = 17, Pin name = IO_L4P_17,        Sch name = DDR-DQ27   
+# NET "DDR2DQ28"   LOC="AC30";   # Bank = 17, Pin name = IO_L10N_CC_17,    Sch name = DDR-DQ28   
+# NET "DDR2DQ29"   LOC="W29";    # Bank = 17, Pin name = IO_L7P_17,        Sch name = DDR-DQ29   
+# NET "DDR2DQ30"   LOC="V27";    # Bank = 17, Pin name = IO_L5N_17,        Sch name = DDR-DQ30   
+# NET "DDR2DQ31"   LOC="W27";    # Bank = 17, Pin name = IO_L3N_17,        Sch name = DDR-DQ31   
+# NET "DDR2DQ32"   LOC="V29";    # Bank = 17, Pin name = IO_L7N_17,        Sch name = DDR-DQ32   
+# NET "DDR2DQ33"   LOC="Y27";    # Bank = 17, Pin name = IO_L3P_17,        Sch name = DDR-DQ33   
+# NET "DDR2DQ34"   LOC="Y26";    # Bank = 17, Pin name = IO_L1P_17,        Sch name = DDR-DQ34   
+# NET "DDR2DQ35"   LOC="W24";    # Bank = 17, Pin name = IO_L0P_17,        Sch name = DDR-DQ35   
+# NET "DDR2DQ36"   LOC="V28";    # Bank = 17, Pin name = IO_L5P_17,        Sch name = DDR-DQ36   
+# NET "DDR2DQ37"   LOC="W25";    # Bank = 17, Pin name = IO_L2N_17,        Sch name = DDR-DQ37   
+# NET "DDR2DQ38"   LOC="W26";    # Bank = 17, Pin name = IO_L1N_17,        Sch name = DDR-DQ38   
+# NET "DDR2DQ39"   LOC="V24";    # Bank = 17, Pin name = IO_L0N_17,        Sch name = DDR-DQ39   
+# NET "DDR2DQ40"   LOC="R24";    # Bank = 19, Pin name = IO_L19P_19,       Sch name = DDR-DQ40   
+# NET "DDR2DQ41"   LOC="P25";    # Bank = 19, Pin name = IO_L18P_19,       Sch name = DDR-DQ41   
+# NET "DDR2DQ42"   LOC="N24";    # Bank = 19, Pin name = IO_L17P_19,       Sch name = DDR-DQ42   
+# NET "DDR2DQ43"   LOC="P26";    # Bank = 19, Pin name = IO_L16P_19,       Sch name = DDR-DQ43   
+# NET "DDR2DQ44"   LOC="T24";    # Bank = 19, Pin name = IO_L19N_19,       Sch name = DDR-DQ44   
+# NET "DDR2DQ45"   LOC="N25";    # Bank = 19, Pin name = IO_L18N_19,       Sch name = DDR-DQ45   
+# NET "DDR2DQ46"   LOC="P27";    # Bank = 19, Pin name = IO_L16N_19,       Sch name = DDR-DQ46   
+# NET "DDR2DQ47"   LOC="N28";    # Bank = 19, Pin name = IO_L15N_19,       Sch name = DDR-DQ47   
+# NET "DDR2DQ48"   LOC="M28";    # Bank = 19, Pin name = IO_L15P_19,       Sch name = DDR-DQ48   
+# NET "DDR2DQ49"   LOC="L28";    # Bank = 19, Pin name = IO_L13N_19,       Sch name = DDR-DQ49   
+# NET "DDR2DQ50"   LOC="F25";    # Bank = 19, Pin name = IO_L7P_19,        Sch name = DDR-DQ50   
+# NET "DDR2DQ51"   LOC="H25";    # Bank = 19, Pin name = IO_L6P_19,        Sch name = DDR-DQ51   
+# NET "DDR2DQ52"   LOC="K27";    # Bank = 19, Pin name = IO_L14P_19,       Sch name = DDR-DQ52   
+# NET "DDR2DQ53"   LOC="K28";    # Bank = 19, Pin name = IO_L13P_19,       Sch name = DDR-DQ53   
+# NET "DDR2DQ54"   LOC="H24";    # Bank = 19, Pin name = IO_L6N_19,        Sch name = DDR-DQ54   
+# NET "DDR2DQ55"   LOC="G26";    # Bank = 19, Pin name = IO_L5N_19,        Sch name = DDR-DQ55   
+# NET "DDR2DQ56"   LOC="G25";    # Bank = 19, Pin name = IO_L5P_19,        Sch name = DDR-DQ56
+# NET "DDR2DQ57"   LOC="M26";    # Bank = 19, Pin name = IO_L3N_19,        Sch name = DDR-DQ57  
+# NET "DDR2DQ58"   LOC="J24";    # Bank = 19, Pin name = IO_L2P_19,        Sch name = DDR-DQ58   
+# NET "DDR2DQ59"   LOC="L26";    # Bank = 19, Pin name = IO_L1N_19,        Sch name = DDR-DQ59   
+# NET "DDR2DQ60"   LOC="J27";    # Bank = 19, Pin name = IO_L4P_19,        Sch name = DDR-DQ60  
+# NET "DDR2DQ61"   LOC="M25";    # Bank = 19, Pin name = IO_L3P_19,        Sch name = DDR-DQ61   
+# NET "DDR2DQ62"   LOC="L25";    # Bank = 19, Pin name = IO_L1P_19,        Sch name = DDR-DQ62   
+# NET "DDR2DQ63"   LOC="L24";    # Bank = 19, Pin name = IO_L0N_19,        Sch name = DDR-DQ63  
+# NET "DDR2DM0"    LOC="AJ31";   # Bank = 17, Pin name = IO_L16P_17,       Sch name = DDR-DM0   
+# NET "DDR2DM1"    LOC="AE28";   # Bank = 21, Pin name = IO_L7P_21,        Sch name = DDR-DM1   
+# NET "DDR2DM2"    LOC="Y24";    # Bank = 21, Pin name = IO_L2P_21,        Sch name = DDR-DM2  
+# NET "DDR2DM3"    LOC="Y31";    # Bank = 17, Pin name = IO_L6N_17,        Sch name = DDR-DM3   
+# NET "DDR2DM4"    LOC="V25";    # Bank = 17, Pin name = IO_L2P_17,        Sch name = DDR-DM4   
+# NET "DDR2DM5"    LOC="P24";    # Bank = 19, Pin name = IO_L17N_19,       Sch name = DDR-DM5   
+# NET "DDR2DM6"    LOC="F26";    # Bank = 19, Pin name = IO_L7N_19,        Sch name = DDR-DM6   
+# NET "DDR2DM7"    LOC="J25";    # Bank = 19, Pin name = IO_L2N_19,        Sch name = DDR-DM7   
+# NET "DDR2DQS0"   LOC="AA29";   # Bank = 17, Pin name = IO_L11P_CC_17,    Sch name = DDR-DQS0   
+# NET "DDR2DQS1"   LOC="AK28";   # Bank = 21, Pin name = IO_L10P_CC_21,    Sch name = DDR-DQS1   
+# NET "DDR2DQS2"   LOC="AK26";   # Bank = 21, Pin name = IO_L8P_CC_21,     Sch name = DDR-DQS2   
+# NET "DDR2DQS3"   LOC="AB31";   # Bank = 17, Pin name = IO_L9P_CC_17,     Sch name = DDR-DQS3   
+# NET "DDR2DQS4"   LOC="Y28";    # Bank = 17, Pin name = IO_L8P_CC_17,     Sch name = DDR-DQS4  
+# NET "DDR2DQS5"   LOC="E26";    # Bank = 19, Pin name = IO_L11P_CC_19,    Sch name = DDR-DQS5   
+# NET "DDR2DQS6"   LOC="H28";    # Bank = 19, Pin name = IO_L9P_CC_19,     Sch name = DDR-DQS6   
+# NET "DDR2DQS7"   LOC="G27";    # Bank = 19, Pin name = IO_L8P_CC_19,     Sch name = DDR-DQS7   
+# NET "DDR2DQSN0"  LOC="AA30";   # Bank = 17, Pin name = IO_L11N_CC_17,    Sch name = DDR-DQS0#   
+# NET "DDR2DQSN1"  LOC="AK27";   # Bank = 21, Pin name = IO_L10N_CC_21,    Sch name = DDR-DQS1#  
+# NET "DDR2DQSN2"  LOC="AJ27";   # Bank = 21, Pin name = IO_L8N_CC_21,     Sch name = DDR-DQS2#  
+# NET "DDR2DQSN3"  LOC="AA31";   # Bank = 17, Pin name = IO_L9N_CC_17,     Sch name = DDR-DQS3#  
+# NET "DDR2DQSN4"  LOC="Y29";    # Bank = 17, Pin name = IO_L8N_CC_17,     Sch name = DDR-DQS4#   
+# NET "DDR2DQSN5"  LOC="E27";    # Bank = 19, Pin name = IO_L11N_CC_19,    Sch name = DDR-DQS5#  
+# NET "DDR2DQSN6"  LOC="G28";    # Bank = 19, Pin name = IO_L9N_CC_19,     Sch name = DDR-DQS6#  
+# NET "DDR2DQSN7"  LOC="H27";    # Bank = 19, Pin name = IO_L8N_CC_19,     Sch name = DDR-DQS7#  
+# NET "DDR2SCL"    LOC="E29";    # Bank = 15, Pin name = IO_L0P_15,        Sch name = DDR-SCL
+# NET "DDR2SDA"    LOC="F29";    # Bank = 15, Pin name = IO_L0N_15,        Sch name = DDR-SDA
+# 
+## onboard HDMI
+# NET "HDMIHSYNC"  LOC = "H8";     # Bank = 20, Pin name = IO_L3N_20,       Sch name = HDMI-H    
+# NET "HDMIVSYNC"  LOC = "F13";    # Bank = 20, Pin name = IO_L19P_20,      Sch name = HDMI-V      
+# NET "HDMIDE"     LOC = "V10";    # Bank = 18, Pin name = IO_L19P_18,      Sch name = HDMI-DE      
+# NET "HDMICLKP"   LOC = "K11";    # Bank = 20, Pin name = IO_L5P_20,       Sch name = HDMI-CLK_P      
+# NET "HDMICLKN"   LOC = "J11";    # Bank = 20, Pin name = IO_L5N_20,       Sch name = HDMI-CLK_N      
+# NET "HDMID<0>"   LOC = "G10";    # Bank = 20, Pin name = IO_L2N_20,       Sch name = HDMI-D0      
+# NET "HDMID<1>"   LOC = "G8";     # Bank = 20, Pin name = IO_L3P_20,       Sch name = HDMI-D1      
+# NET "HDMID<2>"   LOC = "B12";    # Bank = 20, Pin name = IO_L8N_CC_20,    Sch name = HDMI-D2      
+# NET "HDMID<3>"   LOC = "D12";    # Bank = 20, Pin name = IO_L6P_20,       Sch name = HDMI-D3      
+# NET "HDMID<4>"   LOC = "C12";    # Bank = 20, Pin name = IO_L6N_20,       Sch name = HDMI-D4     
+# NET "HDMID<5>"   LOC = "D11";    # Bank = 20, Pin name = IO_L4P_20,       Sch name = HDMI-D5      
+# NET "HDMID<6>"   LOC = "F10";    # Bank = 20, Pin name = IO_L2P_20,       Sch name = HDMI-D6      
+# NET "HDMID<7>"   LOC = "D10";    # Bank = 20, Pin name = IO_L4N_VREF_20,  Sch name = HDMI-D7      
+# NET "HDMID<8>"   LOC = "E9";     # Bank = 20, Pin name = IO_L0P_20,       Sch name = HDMI-D8      
+# NET "HDMID<9>"   LOC = "F9";     # Bank = 20, Pin name = IO_L1P_20,       Sch name = HDMI-D9      
+# NET "HDMID<10>"  LOC = "E8";     # Bank = 20, Pin name = IO_L0N_20,       Sch name = HDMI-D10      
+# NET "HDMID<11>"  LOC = "F8";     # Bank = 20, Pin name = IO_L1N_20,       Sch name = HDMI-D11      
+# NET "HDMISCL"    LOC = "U8";     # Bank = 18, Pin name = IO_L17N_18,      Sch name = I2C-SCL      
+# NET "HDMISDA"    LOC = "V8";     # Bank = 18, Pin name = IO_L17P_18,      Sch name = I2C-SDA 
+# NET "HDMIHPINT"  LOC = "W9";     # Bank = 18, Pin name = IO_L15N_18,      Sch name = HDMI-HPINT    
+# NET "HDMIRSTN"   LOC = "AF23";   # Bank = 2,  Pin name = IO_L1P_CC_A25_2, Sch name = HDMI-RST 
+# 
+## onboard USB Host Controller
+# NET "USBA<0>"    LOC = "AD4";   # Bank = 18,  Pin name = IO_L5P_18,       Sch name = USB-A0  
+# NET "USBA<1>"    LOC = "AE6";   # Bank = 18,  Pin name = IO_L7N_18,       Sch name = USB-A1    
+# NET "USBD<0>"    LOC = "Y6";    # Bank = 18,  Pin name = IO_L8N_CC_18,    Sch name = USB-D0    
+# NET "USBD<1>"    LOC = "AA6";   # Bank = 18,  Pin name = IO_L6P_18,       Sch name = USB-D1    
+# NET "USBD<2>"    LOC = "Y7";    # Bank = 18,  Pin name = IO_L6N_18,       Sch name = USB-D2    
+# NET "USBD<3>"    LOC = "Y9";    # Bank = 18,  Pin name = IO_L4N_VREF_18,  Sch name = USB-D3    
+# NET "USBD<4>"    LOC = "W10";   # Bank = 18,  Pin name = IO_L15P_18,      Sch name = USB-D4    
+# NET "USBD<5>"    LOC = "W11";   # Bank = 18,  Pin name = IO_L13N_18,      Sch name = USB-D5    
+# NET "USBD<6>"    LOC = "Y11";   # Bank = 18,  Pin name = IO_L13P_18,      Sch name = USB-D6    
+# NET "USBD<7>"    LOC = "AJ7";   # Bank = 18,  Pin name = IO_L16P_18,      Sch name = USB-D7    
+# NET "USBD<8>"    LOC = "AH7";   # Bank = 18,  Pin name = IO_L14P_18,      Sch name = USB-D8    
+# NET "USBD<9>"    LOC = "AH5";   # Bank = 18,  Pin name = IO_L12P_VRN_18,  Sch name = USB-D9    
+# NET "USBD<10>"   LOC = "AG6";   # Bank = 18,  Pin name = IO_L12N_VRP_18,  Sch name = USB-D10    
+# NET "USBD<11>"   LOC = "AG7";   # Bank = 18,  Pin name = IO_L14N_VREF_18, Sch name = USB-D11   
+# NET "USBD<12>"   LOC = "AK7";   # Bank = 18,  Pin name = IO_L18P_18,      Sch name = USB-D12   
+# NET "USBD<13>"   LOC = "AK6";   # Bank = 18,  Pin name = IO_L18N_18,      Sch name = USB-D13   
+# NET "USBD<14>"   LOC = "AG5";   # Bank = 18,  Pin name = IO_L10P_CC_18,   Sch name = USB-D14   
+# NET "USBD<15>"   LOC = "AF5";   # Bank = 18,  Pin name = IO_L10N_CC_18,   Sch name = USB-D15   
+# NET "USBRDN"     LOC = "AD5";   # Bank = 18,  Pin name = IO_L5N_18,       Sch name = USB-RD   
+# NET "USBWRN"     LOC = "AE7";   # Bank = 18,  Pin name = IO_L9P_CC_18,    Sch name = USB-WR    
+# NET "USBCSN"     LOC = "AF6";   # Bank = 18,  Pin name = IO_L9N_CC_18,    Sch name = USB-CS   
+# NET "USBINT"     LOC = "AD6";   # Bank = 18,  Pin name = IO_L7P_18,       Sch name = USB-INT  
+# NET "USBRST"     LOC = "AJ6";   # Bank = 18,  Pin name = IO_L16N_18,      Sch name = USB-RESET
+# NET "USBTX"      LOC = "W7";    # Bank = 18,  Pin name = IO_L11P_CC_18,   Sch name = USB-TX
+# NET "USBRX"      LOC = "V9";    # Bank = 18,  Pin name = IO_L19N_18,      Sch name = USB-RX
+# 
+## Audio
+# NET "BITCLK"  LOC = "AH17";   # Bank = 4,   Pin name = IO_L7P_GC_VRN_4,   Sch name = AUD-BIT-CLK 
+# NET "AUDSDI"  LOC = "AE18";   # Bank = 4,   Pin name = IO_L8N_CC_GC_4,    Sch name = AUD-SDI
+# NET "AUDSDO"  LOC = "AG20";   # Bank = 4,   Pin name = IO_L4N_GC_VREF_4,  Sch name = AUD-SDO
+# NET "AUDSYNC" LOC = "J9";     # Bank = 20,  Pin name = IO_L9N_CC_20,      Sch name = AUD-SYNC
+# NET "AUDRST"  LOC = "E12";    # Bank = 20,  Pin name = IO_L17P_20,        Sch name = AUD-RESET
+# 
+## PMOD Connectors
+# NET "JA<0>"  LOC = "AD11";   # BANK = 22,  Pin name = IO_L10N_CC_22,   Sch name = JA1
+ NET "UART_TXD"  LOC = "AD9"  |  IOSTANDARD=LVCMOS33;    # BANK = 22,  Pin name = IO_L9N_CC_22,    Sch name = JA2
+# NET "JA<2>"  LOC = "AM13";   # BANK = 22,  Pin name = IO_L2N_22,       Sch name = JA3
+# NET "JA<3>"  LOC = "AM12";   # BANK = 22,  Pin name = IO_L6P_22,       Sch name = JA4
+# NET "JA<4>"  LOC = "AD10";   # BANK = 22,  Pin name = IO_L10P_CC_22,   Sch name = JA7
+# NET "JA<5>"  LOC = "AE8";    # BANK = 22,  Pin name = IO_L9P_CC_22,    Sch name = JA8
+# NET "JA<6>"  LOC = "AF10";   # BANK = 22,  Pin name = IO_L14N_VREF_22, Sch name = JA9
+# NET "JA<7>"  LOC = "AJ11";   # BANK = 22,  Pin name = IO_L11N_CC_22,   Sch name = JA10
+#
+# NET "JB<0>"  LOC = "AE9";    # BANK = 22,  Pin name = IO_L12N_VRP_22,  Sch name = JB1
+# NET "JB<1>"  LOC = "AC8";    # BANK = 22,  Pin name = IO_L5P_22,       Sch name = JB2
+# NET "JB<2>"  LOC = "AB10";   # BANK = 22,  Pin name = IO_L1P_22,       Sch name = JB3
+# NET "JB<3>"  LOC = "AC9";    # BANK = 22,  Pin name = IO_L7N_22,       Sch name = JB4
+# NET "JB<4>"  LOC = "AF8";    # BANK = 22,  Pin name = IO_L12P_VRN_22,  Sch name = JB7
+# NET "JB<5>"  LOC = "AB8";    # BANK = 22,  Pin name = IO_L5N_22,       Sch name = JB8
+# NET "JB<6>"  LOC = "AA10";   # BANK = 22,  Pin name = IO_L1N_22,       Sch name = JB9
+# NET "JB<7>"  LOC = "AA9";    # BANK = 22,  Pin name = IO_L3N_22,       Sch name = JB10
+#
+# NET "JC<0>"  LOC = "AL11";   # BANK = 22,  Pin name = IO_L8P_CC_22,    Sch name = JC1
+# NET "JC<1>"  LOC = "AJ10";   # BANK = 22,  Pin name = IO_L15N_22,      Sch name = JC2
+# NET "JC<2>"  LOC = "AK9";    # BANK = 22,  Pin name = IO_L13N_22,      Sch name = JC3
+# NET "JC<3>"  LOC = "AF9";    # BANK = 22,  Pin name = IO_L14P_22,      Sch name = JC4
+# NET "JC<4>"  LOC = "AK11";   # BANK = 22,  Pin name = IO_L11P_CC_22,   Sch name = JC7
+# NET "JC<5>"  LOC = "AC10";   # BANK = 22,  Pin name = IO_L7P_22,       Sch name = JC8
+# NET "JC<6>"  LOC = "AJ9";    # BANK = 22,  Pin name = IO_L15P_22,      Sch name = JC9
+# NET "JC<7>"  LOC = "AA8";    # BANK = 22,  Pin name = IO_L3P_22,       Sch name = JC10
+#
+# NET "JD<0>"  LOC = "AN14";   # BANK = 22,  Pin name = IO_L0P_22,       Sch name = JD1
+# NET "JD<1>"  LOC = "AN13";   # BANK = 22,  Pin name = IO_L2P_22,       Sch name = JD2
+# NET "JD<2>"  LOC = "AP12";   # BANK = 22,  Pin name = IO_L4P_22,       Sch name = JD3
+# NET "JD<3>"  LOC = "AL10";   # BANK = 22,  Pin name = IO_L8N_CC_22,    Sch name = JD4
+# NET "JD<4>"  LOC = "AP14";   # BANK = 22,  Pin name = IO_L0N_22,       Sch name = JD7
+# NET "JD<5>"  LOC = "AN12";   # BANK = 22,  Pin name = IO_L4N_VREF_22,  Sch name = JD8
+# NET "JD<6>"  LOC = "AM11";   # BANK = 22,  Pin name = IO_L6N_22,       Sch name = JD9
+# NET "JD<7>"  LOC = "AK8";    # BANK = 22,  Pin name = IO_L13P_22,      Sch name = JD10
+# 
+## onboard LCD
+# NET "LCDEN"   LOC = "AA5";  # BANK = 18, Pin name = IO_L2P_18,     Sch name = LCD-E
+# NET "LCDRS"   LOC = "V7";   # BANK = 18, Pin name = IO_L11N_CC_18, Sch name = LCD-RS  
+# NET "LCDRW"   LOC = "W6";   # BANK = 18, Pin name = IO_L8P_CC_18,  Sch name = LCD-RW  
+# NET "LCDD<0>" LOC = "Y8";   # BANK = 18, Pin name = IO_L4P_18,     Sch name = LCD-D0  
+# NET "LCDD<1>" LOC = "AB7";  # BANK = 18, Pin name = IO_L1N_18,     Sch name = LCD-D1  
+# NET "LCDD<2>" LOC = "AB5";  # BANK = 18, Pin name = IO_L2N_18,     Sch name = LCD-D2  
+# NET "LCDD<3>" LOC = "AC4";  # BANK = 18, Pin name = IO_L0P_18,     Sch name = LCD-D3  
+# NET "LCDD<4>" LOC = "AB6";  # BANK = 18, Pin name = IO_L1P_18,     Sch name = LCD-D4  
+# NET "LCDD<5>" LOC = "AC5";  # BANK = 18, Pin name = IO_L0N_18,     Sch name = LCD-D5  
+# NET "LCDD<6>" LOC = "AC7";  # BANK = 18, Pin name = IO_L3P_18,     Sch name = LCD-D6  
+# NET "LCDD<7>" LOC = "AD7";  # BANK = 18, Pin name = IO_L3N_18,     Sch name = LCD-D7  
+# 
+## PS/2 connector
+# NET "PS2C" LOC = "H9";  # Bank = 20, Pin name = IO_L7N_20,  Sch name = PS2C
+# NET "PS2D" LOC = "H10"; # Bank = 20, Pin name = IO_L7P_20,  Sch name = PS2D
+# 
+## onboard VHDCI
+## VHDCI_1
+## Channnel 1 connects to P signals, Channel 2 to N signals
+# NET "VHDCI1IO1<0>"  LOC = "B32";  # BANK = 11, Pin name = IO_L0P_11,           Sch name = EXP-IO1_P
+# NET "VHDCI1IO1<1>"  LOC = "C32";  # BANK = 11, Pin name = IO_L2P_11,           Sch name = EXP-IO2_P
+# NET "VHDCI1IO1<2>"  LOC = "B33";  # BANK = 11, Pin name = IO_L1P_11,           Sch name = EXP-IO3_P
+# NET "VHDCI1IO1<3>"  LOC = "E32";  # BANK = 11, Pin name = IO_L6P_11,           Sch name = EXP-IO4_P
+# NET "VHDCI1IO1<4>"  LOC = "C34";  # BANK = 11, Pin name = IO_L3P_11,           Sch name = EXP-IO5_P
+# NET "VHDCI1IO1<5>"  LOC = "G32";  # BANK = 11, Pin name = IO_L4P_11,           Sch name = EXP-IO6_P
+# NET "VHDCI1IO1<6>"  LOC = "F33";  # BANK = 11, Pin name = IO_L5P_11,           Sch name = EXP-IO7_P
+# NET "VHDCI1IO1<7>"  LOC = "J32";  # BANK = 11, Pin name = IO_L8P_CC_11,        Sch name = EXP-IO8_P
+# NET "VHDCI1IO1<8>"  LOC = "G33";  # BANK = 11, Pin name = IO_L7P_11,           Sch name = EXP-IO9_P
+# NET "VHDCI1IO1<9>"  LOC = "K33";  # BANK = 11, Pin name = IO_L11P_CC_SM14P_11, Sch name = EXP-IO10_P
+# NET "VHDCI1IO1<10>" LOC = "H34";  # BANK = 11, Pin name = IO_L9P_CC_11,        Sch name = EXP-IO11_P
+# NET "VHDCI1IO1<11>" LOC = "L34";  # BANK = 11, Pin name = IO_L10P_CC_SM15P_11, Sch name = EXP-IO12_P
+# NET "VHDCI1IO1<12>" LOC = "L33";  # BANK = 11, Pin name = IO_L13P_11,          Sch name = EXP-IO13_P
+# NET "VHDCI1IO1<13>" LOC = "N33";  # BANK = 11, Pin name = IO_L12P_VRN_11,      Sch name = EXP-IO14_P
+# NET "VHDCI1IO1<14>" LOC = "P32";  # BANK = 11, Pin name = IO_L15P_SM13P_11,    Sch name = EXP-IO15_P
+# NET "VHDCI1IO1<15>" LOC = "P34";  # BANK = 11, Pin name = IO_L14P_11,          Sch name = EXP-IO16_P
+# NET "VHDCI1IO1<16>" LOC = "R33";  # BANK = 11, Pin name = IO_L17P_SM11P_11,    Sch name = EXP-IO17_P
+# NET "VHDCI1IO1<17>" LOC = "T33";  # BANK = 11, Pin name = IO_L16P_SM12P_11,    Sch name = EXP-IO18_P
+# NET "VHDCI1IO1<18>" LOC = "U32";  # BANK = 11, Pin name = IO_L19P_SM9P_11,     Sch name = EXP-IO19_P
+# NET "VHDCI1IO1<19>" LOC = "U33";  # BANK = 11, Pin name = IO_L18P_SM10P_11,    Sch name = EXP-IO20_P
+#
+# NET "VHDCI1IO2<0>"  LOC = "A33";  # BANK = 11, Pin name = IO_L0N_11,           Sch name = EXP-IO1_N
+# NET "VHDCI1IO2<1>"  LOC = "D32";  # BANK = 11, Pin name = IO_L2N_11,           Sch name = EXP-IO2_N
+# NET "VHDCI1IO2<2>"  LOC = "C33";  # BANK = 11, Pin name = IO_L1N_11,           Sch name = EXP-IO3_N
+# NET "VHDCI1IO2<3>"  LOC = "E33";  # BANK = 11, Pin name = IO_L6N_11,           Sch name = EXP-IO4_N
+# NET "VHDCI1IO2<4>"  LOC = "D34";  # BANK = 11, Pin name = IO_L3N_11,           Sch name = EXP-IO5_N
+# NET "VHDCI1IO2<5>"  LOC = "H32";  # BANK = 11, Pin name = IO_L4N_11,           Sch name = EXP-IO6_N
+# NET "VHDCI1IO2<6>"  LOC = "E34";  # BANK = 11, Pin name = IO_L5N_11,           Sch name = EXP-IO7_N
+# NET "VHDCI1IO2<7>"  LOC = "H33";  # BANK = 11, Pin name = IO_L8N_CC_11,        Sch name = EXP-IO8_N
+# NET "VHDCI1IO2<8>"  LOC = "F34";  # BANK = 11, Pin name = IO_L7N_11,           Sch name = EXP-IO9_N
+# NET "VHDCI1IO2<9>"  LOC = "K32";  # BANK = 11, Pin name = IO_L11N_CC_SM14N_11, Sch name = EXP-IO10_N
+# NET "VHDCI1IO2<10>" LOC = "J34";  # BANK = 11, Pin name = IO_L9N_CC_11,        Sch name = EXP-IO11_N
+# NET "VHDCI1IO2<11>" LOC = "K34";  # BANK = 11, Pin name = IO_L10N_CC_SM15N_11, Sch name = EXP-IO12_N
+# NET "VHDCI1IO2<12>" LOC = "M32";  # BANK = 11, Pin name = IO_L13N_11,          Sch name = EXP-IO13_N
+# NET "VHDCI1IO2<13>" LOC = "M33";  # BANK = 11, Pin name = IO_L12N_VRN_11,      Sch name = EXP-IO14_N
+# NET "VHDCI1IO2<14>" LOC = "N32";  # BANK = 11, Pin name = IO_L15N_SM13N_11,    Sch name = EXP-IO15_N
+# NET "VHDCI1IO2<15>" LOC = "N34";  # BANK = 11, Pin name = IO_L14N_11,          Sch name = EXP-IO16_N
+# NET "VHDCI1IO2<16>" LOC = "R32";  # BANK = 11, Pin name = IO_L17N_SM11N_11,    Sch name = EXP-IO17_N
+# NET "VHDCI1IO2<17>" LOC = "R34";  # BANK = 11, Pin name = IO_L16N_SM12N_11,    Sch name = EXP-IO18_N
+# NET "VHDCI1IO2<18>" LOC = "U31";  # BANK = 11, Pin name = IO_L19N_SM9N_11,     Sch name = EXP-IO19_N
+# NET "VHDCI1IO2<19>" LOC = "T34";  # BANK = 11, Pin name = IO_L18N_SM10N_11,    Sch name = EXP-IO20_N
+# 
+# #VHDCI_2
+# # Channnel 1 connects to P signals, Channel 2 to N signals
+# NET "VHDCI2IO1<0>"  LOC = "W34";   # BANK = 13, Pin name = IO_L1P_SM7P_13,    Sch name = EXP-IO21_P 
+# NET "VHDCI2IO1<1>"  LOC = "V32";   # BANK = 13, Pin name = IO_L0P_SM8P_13,    Sch name = EXP-IO22_P 
+# NET "VHDCI2IO1<2>"  LOC = "AA34";  # BANK = 13, Pin name = IO_L3P_SM5P_13,    Sch name = EXP-IO23_P 
+# NET "VHDCI2IO1<3>"  LOC = "Y33";   # BANK = 13, Pin name = IO_L2P_SM6P_13,    Sch name = EXP-IO24_P 
+# NET "VHDCI2IO1<4>"  LOC = "AC33";  # BANK = 13, Pin name = IO_L7P_SM2P_13,    Sch name = EXP-IO25_P 
+# NET "VHDCI2IO1<5>"  LOC = "Y32";   # BANK = 13, Pin name = IO_L4P_13,         Sch name = EXP-IO26_P 
+# NET "VHDCI2IO1<6>"  LOC = "AC34";  # BANK = 13, Pin name = IO_L5P_SM4P_13,    Sch name = EXP-IO27_P 
+# NET "VHDCI2IO1<7>"  LOC = "AC32";  # BANK = 13, Pin name = IO_L6P_SM3P_13,    Sch name = EXP-IO28_P 
+# NET "VHDCI2IO1<8>"  LOC = "AF34";  # BANK = 13, Pin name = IO_L9P_CC_SM0P_13, Sch name = EXP-IO29_P 
+# NET "VHDCI2IO1<9>"  LOC = "AF33";  # BANK = 13, Pin name = IO_L8P_CC_SM1P_13, Sch name = EXP-IO30_P 
+# NET "VHDCI2IO1<10>" LOC = "AG33";  # BANK = 13, Pin name = IO_L12P_VRN_13,    Sch name = EXP-IO31_P 
+# NET "VHDCI2IO1<11>" LOC = "AH34";  # BANK = 13, Pin name = IO_L10P_CC_13,     Sch name = EXP-IO32_P 
+# NET "VHDCI2IO1<12>" LOC = "AD32";  # BANK = 13, Pin name = IO_L11P_CC_13,     Sch name = EXP-IO33_P 
+# NET "VHDCI2IO1<13>" LOC = "AK34";  # BANK = 13, Pin name = IO_L13P_13,        Sch name = EXP-IO34_P 
+# NET "VHDCI2IO1<14>" LOC = "AG32";  # BANK = 13, Pin name = IO_L14P_13,        Sch name = EXP-IO35_P 
+# NET "VHDCI2IO1<15>" LOC = "AM33";  # BANK = 13, Pin name = IO_L17P_13,        Sch name = EXP-IO36_P 
+# NET "VHDCI2IO1<16>" LOC = "AJ32";  # BANK = 13, Pin name = IO_L15P_13,        Sch name = EXP-IO37_P 
+# NET "VHDCI2IO1<17>" LOC = "AN34";  # BANK = 13, Pin name = IO_L18P_13,        Sch name = EXP-IO38_P 
+# NET "VHDCI2IO1<18>" LOC = "AL34";  # BANK = 13, Pin name = IO_L16P_13,        Sch name = EXP-IO39_P 
+# NET "VHDCI2IO1<19>" LOC = "AN32";  # BANK = 13, Pin name = IO_L19P_13,        Sch name = EXP-IO40_P 
+#
+# NET "VHDCI2IO2<0>"  LOC = "V34";   # BANK = 13, Pin name = IO_L1N_SM7N_13,    Sch name = EXP-IO21_N
+# NET "VHDCI2IO2<1>"  LOC = "V33";   # BANK = 13, Pin name = IO_L0N_SM8N_13,    Sch name = EXP-IO22_N
+# NET "VHDCI2IO2<2>"  LOC = "Y34";   # BANK = 13, Pin name = IO_L3N_SM5N_13,    Sch name = EXP-IO23_N
+# NET "VHDCI2IO2<3>"  LOC = "AA33";  # BANK = 13, Pin name = IO_L2N_SM6N_13,    Sch name = EXP-IO24_N
+# NET "VHDCI2IO2<4>"  LOC = "AB33";  # BANK = 13, Pin name = IO_L7N_SM2N_13,    Sch name = EXP-IO25_N
+# NET "VHDCI2IO2<5>"  LOC = "W32";   # BANK = 13, Pin name = IO_L4N_13,         Sch name = EXP-IO26_N
+# NET "VHDCI2IO2<6>"  LOC = "AD34";  # BANK = 13, Pin name = IO_L5N_SM4N_13,    Sch name = EXP-IO27_N
+# NET "VHDCI2IO2<7>"  LOC = "AB32";  # BANK = 13, Pin name = IO_L6N_SM3N_13,    Sch name = EXP-IO28_N
+# NET "VHDCI2IO2<8>"  LOC = "AE34";  # BANK = 13, Pin name = IO_L9N_CC_SM0N_13, Sch name = EXP-IO29_N
+# NET "VHDCI2IO2<9>"  LOC = "AE33";  # BANK = 13, Pin name = IO_L8N_CC_SM1N_13, Sch name = EXP-IO30_N
+# NET "VHDCI2IO2<10>" LOC = "AH33";  # BANK = 13, Pin name = IO_L12N_VRN_13,    Sch name = EXP-IO31_N
+# NET "VHDCI2IO2<11>" LOC = "AJ34";  # BANK = 13, Pin name = IO_L10N_CC_13,     Sch name = EXP-IO32_N
+# NET "VHDCI2IO2<12>" LOC = "AE32";  # BANK = 13, Pin name = IO_L11N_CC_13,     Sch name = EXP-IO33_N
+# NET "VHDCI2IO2<13>" LOC = "AK33";  # BANK = 13, Pin name = IO_L13N_13,        Sch name = EXP-IO34_N
+# NET "VHDCI2IO2<14>" LOC = "AH32";  # BANK = 13, Pin name = IO_L14N_13,        Sch name = EXP-IO35_N
+# NET "VHDCI2IO2<15>" LOC = "AM32";  # BANK = 13, Pin name = IO_L17N_13,        Sch name = EXP-IO36_N
+# NET "VHDCI2IO2<16>" LOC = "AK32";  # BANK = 13, Pin name = IO_L15N_13,        Sch name = EXP-IO37_N
+# NET "VHDCI2IO2<17>" LOC = "AN33";  # BANK = 13, Pin name = IO_L18N_13,        Sch name = EXP-IO38_N
+# NET "VHDCI2IO2<18>" LOC = "AL33";  # BANK = 13, Pin name = IO_L16N_13,        Sch name = EXP-IO39_N
+# NET "VHDCI2IO2<19>" LOC = "AP32";  # BANK = 13, Pin name = IO_L19N_13,        Sch name = EXP-IO40_N
+# 
+## RS232 connector1
+# NET "Rs1Rx" LOC = "AG15"; # Bank = 4, Pin name = IO_L5N_GC_4,   Sch name = RS1-RX
+# NET "Rs1Tx" LOC = "AF19"; # Bank = 4, Pin name = IO_L6N_GC_4,   Sch name = RS1-TX
+# 
+## RS232 connector2
+# NET "Rs2Rx" LOC = "AF18"; # Bank = 4, Pin name = IO_L8P_CC_GC_4,    Sch name = RS2-RX
+# NET "Rs2Tx" LOC = "AG16"; # Bank = 4, Pin name = IO_L7N_GC_VRP_4,   Sch name = RS2-TX
+#
+#
+#
+#
+#
+#
+#
+#
+# 
+# 
+#
+#
+#
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 

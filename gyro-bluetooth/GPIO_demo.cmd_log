@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc5vlx50t-ff665-2 GPIO_demo.ngc GPIO_demo.ngd  
+map -intstyle ise -p xc5vlx50t-ff665-2 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o GPIO_demo_map.ncd GPIO_demo.ngd GPIO_demo.pcf 
+vhdtdtfi -prj gyro_bluetooth -o C:/Users/CS152B/final_group_4/gyro_bluetooth/GPIO_demo.vhi -module GPIO_demo -template C:/Xilinx/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work UART_TX_CTRL.vhd -lib work data_interpreter.vhd -lib work Data_Converter.vhd -lib work btn_debounce.vhd -lib work GPIO_demo.vhd 
