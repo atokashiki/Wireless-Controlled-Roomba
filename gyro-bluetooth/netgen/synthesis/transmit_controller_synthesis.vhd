@@ -1,0 +1,34 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--------------------------------------------------------------------------------
+--   ____  ____
+--  /   /\/   /
+-- /___/  \  /    Vendor: Xilinx
+-- \   \   \/     Version: P.68d
+--  \   \         Application: netgen
+--  /   /         Filename: .vhd
+-- /___/   /\     Timestamp: Tue Mar 07 16:20:01 2017
+-- \   \  /  \ 
+--  \___\/\___\
+--             
+-- Command	: -intstyle ise -ar Structure -tm transmit_controller -w -dir netgen/synthesis -ofmt vhdl -sim transmit_controller.ngc transmit_controller_synthesis.vhd 
+-- Device	: xc6slx16-2-csg324
+-- Input file	: transmit_controller.ngc
+-- Output file	: C:\Users\CS152B\final_group_4\gyro_bluetooth\netgen\synthesis\transmit_controller_synthesis.vhd
+-- # of Entities	: 1
+-- Design Name	: transmit_controller
+-- Xilinx	: C:\Xilinx\14.6\ISE_DS\ISE\
+--             
+-- Purpose:    
+--     This VHDL netlist is a verification model and uses simulation 
+--     primitives which may not represent the true implementation of the 
+--     device, however the netlist is functionally correct and should not 
+--     be modified. This file cannot be synthesized and should only be used 
+--     with supported simulation tools.
+--             
+-- Reference:  
+--     Command Line Tools User Guide, Chapter 23
+--     Synthesis and Simulation Design Guide, Chapter 6
+--             
+--------------------------------------------------------------------------------
+
