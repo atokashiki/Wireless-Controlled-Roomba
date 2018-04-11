@@ -1,0 +1,181 @@
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc5vlx50t-ff665-2 transmit_controller.ngc transmit_controller.ngd  
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+netgen -intstyle ise -ar Structure -tm transmit_controller -w -dir netgen/synthesis -ofmt vhdl -sim transmit_controller.ngc transmit_controller_synthesis.vhd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+xst -intstyle ise -ifn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.xst" -ofn "C:/Users/CS152B/final_group_4/gyro_bluetooth/transmit_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc pins.ucf -p xc6slx16-csg324-2 transmit_controller.ngc transmit_controller.ngd  
+map -intstyle ise -p xc6slx16-csg324-2 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o transmit_controller_map.ncd transmit_controller.ngd transmit_controller.pcf 
+par -w -intstyle ise -ol high -mt off transmit_controller_map.ncd transmit_controller.ncd transmit_controller.pcf 
+trce -intstyle ise -v 3 -s 2 -n 3 -fastpaths -xml transmit_controller.twx transmit_controller.ncd -o transmit_controller.twr transmit_controller.pcf -ucf pins.ucf 
+bitgen -intstyle ise -f transmit_controller.ut transmit_controller.ncd 

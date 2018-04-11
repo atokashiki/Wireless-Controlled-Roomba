@@ -1,0 +1,1356 @@
+Release 14.6 - xst P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: transmit_controller.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "transmit_controller.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "transmit_controller"
+Output Format                      : NGC
+Target Device                      : xc6slx16-2-csg324
+
+---- Source Options
+Top Module Name                    : transmit_controller
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\two_bit_counter.vhd" into library work
+Parsing entity <two_bit_counter>.
+Parsing architecture <Behavioral> of entity <two_bit_counter>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\seven_seg_decoder.vhd" into library work
+Parsing entity <seven_seg_decoder>.
+Parsing architecture <Behavioral> of entity <seven_seg_decoder>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\display_clk.vhd" into library work
+Parsing entity <display_clk>.
+Parsing architecture <Behavioral> of entity <display_clk>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\digit_select.vhd" into library work
+Parsing entity <digit_select>.
+Parsing architecture <Behavioral> of entity <digit_select>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\decimal_select.vhd" into library work
+Parsing entity <decimal_select>.
+Parsing architecture <Behavioral> of entity <decimal_select>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_select.vhd" into library work
+Parsing entity <data_select>.
+Parsing architecture <Behavioral> of entity <data_select>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_controller.vhd" into library work
+Parsing entity <data_controller>.
+Parsing architecture <Behavioral> of entity <data_controller>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\anode_decoder.vhd" into library work
+Parsing entity <anode_decoder>.
+Parsing architecture <Behavioral> of entity <anode_decoder>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\UART_TX_CTRL.vhd" into library work
+Parsing entity <UART_TX_CTRL>.
+Parsing architecture <Behavioral> of entity <uart_tx_ctrl>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\spi_interface.vhd" into library work
+Parsing entity <spi_interface>.
+Parsing architecture <Behavioral> of entity <spi_interface>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\master_interface.vhd" into library work
+Parsing entity <master_interface>.
+Parsing architecture <Behavioral> of entity <master_interface>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\display_controller.vhd" into library work
+Parsing entity <display_controller>.
+Parsing architecture <Behavioral> of entity <display_controller>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_interpreter.vhd" into library work
+Parsing entity <data_interpreter>.
+Parsing architecture <Behavioral> of entity <data_interpreter>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\Data_Converter.vhd" into library work
+Parsing entity <Data_Converter>.
+Parsing architecture <Behavioral> of entity <data_converter>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\btn_debounce.vhd" into library work
+Parsing entity <btn_debounce>.
+Parsing architecture <Behavioral> of entity <btn_debounce>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\PmodGYRO_Demo.vhd" into library work
+Parsing entity <PmodGYRO_Demo>.
+Parsing architecture <Behavioral> of entity <pmodgyro_demo>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\GPIO_demo.vhd" into library work
+Parsing entity <GPIO_demo>.
+Parsing architecture <Behavioral> of entity <gpio_demo>.
+Parsing VHDL file "C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.vhd" into library work
+Parsing entity <transmit_controller>.
+Parsing architecture <Behavioral> of entity <transmit_controller>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <transmit_controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <PmodGYRO_Demo> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <master_interface> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\master_interface.vhd" Line 212. Case statement is complete. others clause is never selected
+
+Elaborating entity <spi_interface> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\spi_interface.vhd" Line 116. Case statement is complete. others clause is never selected
+
+Elaborating entity <display_controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <data_controller> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <display_clk> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <anode_decoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <seven_seg_decoder> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <two_bit_counter> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <digit_select> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <decimal_select> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <data_select> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <GPIO_demo> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\GPIO_demo.vhd" Line 361. Case statement is complete. others clause is never selected
+
+Elaborating entity <btn_debounce> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <UART_TX_CTRL> (architecture <Behavioral>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\UART_TX_CTRL.vhd" Line 97. Case statement is complete. others clause is never selected
+
+Elaborating entity <data_interpreter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_interpreter.vhd" Line 102: Assignment to unsigned_data ignored, since the identifier is never used
+WARNING:HDLCompiler:1127 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_interpreter.vhd" Line 108: Assignment to bcd_buf ignored, since the identifier is never used
+WARNING:HDLCompiler:634 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_interpreter.vhd" Line 85: Net <bcd[11]> does not have a driver.
+
+Elaborating entity <Data_Converter> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:634 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\GPIO_demo.vhd" Line 199: Net <sendStr[9][7]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.vhd" Line 81: Net <sw2[7]> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\GPIO_demo.vhd" line 452. All outputs of instance <interpreter> of block <data_interpreter> are unconnected in block <GPIO_demo>. Underlying logic will be removed.
+WARNING:Xst:2972 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\GPIO_demo.vhd" line 460. All outputs of instance <converter> of block <Data_Converter> are unconnected in block <GPIO_demo>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <transmit_controller>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.vhd".
+INFO:Xst:3210 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.vhd" line 94: Output port <dp> of the instance <GYRO> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.vhd" line 104: Output port <LED> of the instance <BLUETOOTH> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.vhd" line 104: Output port <SSEG_CA> of the instance <BLUETOOTH> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\transmit_controller.vhd" line 104: Output port <SSEG_AN> of the instance <BLUETOOTH> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <sw2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <transmit_controller> synthesized.
+
+Synthesizing Unit <PmodGYRO_Demo>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\PmodGYRO_Demo.vhd".
+    Summary:
+	no macro.
+Unit <PmodGYRO_Demo> synthesized.
+
+Synthesizing Unit <master_interface>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\master_interface.vhd".
+    Found 3-bit register for signal <byte_count>.
+    Found 24-bit register for signal <count_wait>.
+    Found 48-bit register for signal <axis_data>.
+    Found 16-bit register for signal <x_axis_data>.
+    Found 16-bit register for signal <y_axis_data>.
+    Found 16-bit register for signal <z_axis_data>.
+    Found 12-bit register for signal <ss_count>.
+    Found 3-bit register for signal <STATE>.
+    Found 3-bit register for signal <previousSTATE>.
+    Found 8-bit register for signal <send_data>.
+    Found 1-bit register for signal <begin_transmission>.
+    Found 8-bit register for signal <temp_data>.
+    Found 1-bit register for signal <slave_select>.
+    Found 4-bit subtractor for signal <GND_7_o_GND_7_o_sub_47_OUT> created at line 177.
+    Found 4-bit adder for signal <n0241> created at line 109.
+    Found 12-bit adder for signal <ss_count[11]_GND_7_o_add_117_OUT> created at line 191.
+    Found 24-bit adder for signal <count_wait[23]_GND_7_o_add_124_OUT> created at line 209.
+    Found 5-bit subtractor for signal <GND_7_o_GND_7_o_sub_6_OUT<4:0>> created at line 109.
+    Found 7-bit subtractor for signal <GND_7_o_GND_7_o_sub_48_OUT<6:0>> created at line 177.
+    Found 3-bit 7-to-1 multiplexer for signal <STATE[2]_X_7_o_wide_mux_130_OUT> created at line 94.
+    Found 3-bit comparator greater for signal <byte_count[2]_GND_7_o_LessThan_4_o> created at line 108
+    Found 3-bit comparator greater for signal <n0023> created at line 154
+    Summary:
+	inferred   6 Adder/Subtractor(s).
+	inferred 159 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  70 Multiplexer(s).
+Unit <master_interface> synthesized.
+
+Synthesizing Unit <spi_interface>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\spi_interface.vhd".
+    Found 2-bit register for signal <RxTxSTATE>.
+    Found 8-bit register for signal <recieved_data>.
+    Found 8-bit register for signal <shift_register>.
+    Found 1-bit register for signal <end_transmission>.
+    Found 4-bit register for signal <rx_count>.
+    Found 1-bit register for signal <sclk_previous>.
+    Found 1-bit register for signal <sclk_buffer>.
+    Found 12-bit register for signal <spi_clk_count>.
+    Found 1-bit register for signal <mosi>.
+    Found finite state machine <FSM_0> for signal <RxTxSTATE>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | rst (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 4-bit adder for signal <rx_count[3]_GND_8_o_add_4_OUT> created at line 95.
+    Found 12-bit adder for signal <spi_clk_count[11]_GND_8_o_add_34_OUT> created at line 139.
+    Found 4-bit 3-to-1 multiplexer for signal <RxTxSTATE[1]_X_8_o_wide_mux_20_OUT> created at line 74.
+    Found 8-bit 3-to-1 multiplexer for signal <RxTxSTATE[1]_X_8_o_wide_mux_21_OUT> created at line 74.
+    Found 4-bit comparator greater for signal <rx_count[3]_PWR_10_o_LessThan_4_o> created at line 88
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  36 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  15 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <spi_interface> synthesized.
+
+Synthesizing Unit <display_controller>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\display_controller.vhd".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <display_controller> synthesized.
+
+Synthesizing Unit <data_controller>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_controller.vhd".
+    Found 16-bit adder for signal <data[15]_GND_10_o_add_7_OUT> created at line 103.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_17_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_20_OUT> created at line 58.
+    Found 4-bit adder for signal <n0257> created at line 62.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_28_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_30_OUT> created at line 58.
+    Found 4-bit adder for signal <n0260> created at line 62.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_38_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_40_OUT> created at line 58.
+    Found 4-bit adder for signal <n0263> created at line 62.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_48_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_50_OUT> created at line 58.
+    Found 4-bit adder for signal <n0266> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[12]_GND_10_o_add_58_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_60_OUT> created at line 58.
+    Found 4-bit adder for signal <n0269> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[11]_GND_10_o_add_68_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_70_OUT> created at line 58.
+    Found 4-bit adder for signal <n0272> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[10]_GND_10_o_add_78_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_80_OUT> created at line 58.
+    Found 4-bit adder for signal <n0275> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[9]_GND_10_o_add_88_OUT> created at line 54.
+    Found 4-bit adder for signal <GND_10_o_GND_10_o_add_90_OUT> created at line 58.
+    Found 4-bit adder for signal <n0278> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[8]_GND_10_o_add_98_OUT> created at line 54.
+    Found 4-bit adder for signal <unsigned_scaled_data[12]_GND_10_o_add_100_OUT> created at line 58.
+    Found 4-bit adder for signal <n0281> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[7]_GND_10_o_add_108_OUT> created at line 54.
+    Found 4-bit adder for signal <unsigned_scaled_data[11]_GND_10_o_add_110_OUT> created at line 58.
+    Found 4-bit adder for signal <n0284> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[6]_GND_10_o_add_118_OUT> created at line 54.
+    Found 4-bit adder for signal <unsigned_scaled_data[10]_GND_10_o_add_120_OUT> created at line 58.
+    Found 4-bit adder for signal <n0287> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[5]_GND_10_o_add_128_OUT> created at line 54.
+    Found 4-bit adder for signal <unsigned_scaled_data[9]_GND_10_o_add_130_OUT> created at line 58.
+    Found 4-bit adder for signal <n0290> created at line 62.
+    Found 4-bit adder for signal <unsigned_scaled_data[4]_GND_10_o_add_138_OUT> created at line 54.
+    Found 4-bit adder for signal <unsigned_scaled_data[8]_GND_10_o_add_140_OUT> created at line 58.
+    Found 4-bit adder for signal <n0293> created at line 62.
+    Found 16-bit subtractor for signal <GND_10_o_GND_10_o_sub_11_OUT<15:0>> created at line 106.
+    Found 16-bit subtractor for signal <GND_10_o_GND_10_o_sub_12_OUT<15:0>> created at line 106.
+    Found 16x4-bit multiplier for signal <unsigned_data[15]_PWR_12_o_MuLt_12_OUT> created at line 106.
+    Found 3-bit comparator greater for signal <PWR_12_o_unsigned_scaled_data[15]_LessThan_17_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_20_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_22_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_28_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_30_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_32_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_38_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_40_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_42_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_48_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_50_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_52_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[12]_LessThan_58_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_60_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_62_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[11]_LessThan_68_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_70_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_72_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[10]_LessThan_78_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_80_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_82_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[9]_LessThan_88_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_90_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_92_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[8]_LessThan_98_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[12]_LessThan_100_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_102_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[7]_LessThan_108_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[11]_LessThan_110_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_112_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[6]_LessThan_118_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[10]_LessThan_120_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_122_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[5]_LessThan_128_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[9]_LessThan_130_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_GND_10_o_LessThan_132_o> created at line 61
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[4]_LessThan_138_o> created at line 53
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[8]_LessThan_140_o> created at line 57
+    Found 4-bit comparator greater for signal <GND_10_o_unsigned_scaled_data[12]_LessThan_142_o> created at line 61
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred  42 Adder/Subtractor(s).
+	inferred  39 Comparator(s).
+	inferred 148 Multiplexer(s).
+Unit <data_controller> synthesized.
+
+Synthesizing Unit <display_clk>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\display_clk.vhd".
+    Found 16-bit register for signal <cntval>.
+    Found 16-bit adder for signal <cntval[15]_GND_12_o_add_1_OUT> created at line 57.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  16 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <display_clk> synthesized.
+
+Synthesizing Unit <anode_decoder>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\anode_decoder.vhd".
+    Found 4x4-bit Read Only RAM for signal <anode>
+    Summary:
+	inferred   1 RAM(s).
+Unit <anode_decoder> synthesized.
+
+Synthesizing Unit <seven_seg_decoder>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\seven_seg_decoder.vhd".
+    Summary:
+	inferred   2 Multiplexer(s).
+Unit <seven_seg_decoder> synthesized.
+
+Synthesizing Unit <two_bit_counter>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\two_bit_counter.vhd".
+    Found 2-bit register for signal <count>.
+    Found 2-bit adder for signal <count[1]_GND_15_o_add_0_OUT> created at line 49.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 D-type flip-flop(s).
+Unit <two_bit_counter> synthesized.
+
+Synthesizing Unit <digit_select>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\digit_select.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <digit> created at line 39.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <digit_select> synthesized.
+
+Synthesizing Unit <decimal_select>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\decimal_select.vhd".
+WARNING:Xst:647 - Input <control> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <decimal_select> synthesized.
+
+Synthesizing Unit <data_select>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\data_select.vhd".
+    Found 16-bit 4-to-1 multiplexer for signal <data> created at line 38.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <data_select> synthesized.
+
+Synthesizing Unit <GPIO_demo>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\GPIO_demo.vhd".
+INFO:Xst:3210 - "C:\Users\CS152B\final_group_4\gyro_bluetooth\GPIO_demo.vhd" line 460: Output port <RESULT> of the instance <converter> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <sendStr<9>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<10>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<11>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<12>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<13>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<14>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<15>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<16>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<17>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<18>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <sendStr<19>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 4-bit register for signal <tmrVal>.
+    Found 2-bit register for signal <btnReg>.
+    Found 4-bit register for signal <uartState>.
+    Found 8-bit register for signal <sendStr<0>>.
+    Found 8-bit register for signal <sendStr<1>>.
+    Found 8-bit register for signal <sendStr<2>>.
+    Found 8-bit register for signal <sendStr<3>>.
+    Found 8-bit register for signal <sendStr<4>>.
+    Found 8-bit register for signal <sendStr<5>>.
+    Found 8-bit register for signal <sendStr<6>>.
+    Found 8-bit register for signal <sendStr<7>>.
+    Found 8-bit register for signal <sendStr<8>>.
+    Found 31-bit register for signal <strEnd>.
+    Found 31-bit register for signal <strIndex>.
+    Found 1-bit register for signal <uartSend>.
+    Found 8-bit register for signal <uartData>.
+    Found 27-bit register for signal <tmrCntr>.
+INFO:Xst:1799 - State ld_btn_str is never reached in FSM <uartState>.
+    Found finite state machine <FSM_1> for signal <uartState>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 86                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 30                                             |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | btnDeBnc<4> (positive)                         |
+    | Reset type         | synchronous                                    |
+    | Reset State        | rst_reg                                        |
+    | Power Up State     | rst_reg                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 27-bit adder for signal <tmrCntr[26]_GND_20_o_add_5_OUT> created at line 257.
+    Found 4-bit adder for signal <tmrVal[3]_GND_20_o_add_10_OUT> created at line 273.
+    Found 31-bit adder for signal <strIndex[30]_GND_20_o_add_83_OUT> created at line 415.
+    Found 16x8-bit Read Only RAM for signal <SSEG_CA>
+    Found 16-bit comparator greater for signal <btnDetectLeft> created at line 309
+    Found 16-bit comparator greater for signal <btnDetectRight> created at line 311
+    Found 31-bit comparator equal for signal <strIndex[30]_strEnd[30]_equal_20_o> created at line 337
+    Summary:
+	inferred   1 RAM(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred 176 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred  14 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <GPIO_demo> synthesized.
+
+Synthesizing Unit <btn_debounce>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\btn_debounce.vhd".
+    Found 16-bit register for signal <btn0_cntr>.
+    Found 1-bit register for signal <btn1_reg>.
+    Found 16-bit register for signal <btn1_cntr>.
+    Found 1-bit register for signal <btn2_reg>.
+    Found 16-bit register for signal <btn2_cntr>.
+    Found 1-bit register for signal <btn3_reg>.
+    Found 16-bit register for signal <btn3_cntr>.
+    Found 1-bit register for signal <btn4_reg>.
+    Found 16-bit register for signal <btn4_cntr>.
+    Found 1-bit register for signal <btn0_reg>.
+    Found 16-bit adder for signal <btn0_cntr[15]_GND_21_o_add_2_OUT> created at line 71.
+    Found 16-bit adder for signal <btn1_cntr[15]_GND_21_o_add_8_OUT> created at line 95.
+    Found 16-bit adder for signal <btn2_cntr[15]_GND_21_o_add_14_OUT> created at line 119.
+    Found 16-bit adder for signal <btn3_cntr[15]_GND_21_o_add_20_OUT> created at line 143.
+    Found 16-bit adder for signal <btn4_cntr[15]_GND_21_o_add_26_OUT> created at line 167.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  85 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <btn_debounce> synthesized.
+
+Synthesizing Unit <UART_TX_CTRL>.
+    Related source file is "C:\Users\CS152B\final_group_4\gyro_bluetooth\UART_TX_CTRL.vhd".
+    Found 14-bit register for signal <bitTmr>.
+    Found 31-bit register for signal <bitIndex>.
+    Found 10-bit register for signal <txData>.
+    Found 1-bit register for signal <txBit>.
+    Found 2-bit register for signal <txState>.
+    Found finite state machine <FSM_2> for signal <txState>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 6                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Power Up State     | rdy                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 14-bit adder for signal <bitTmr[13]_GND_22_o_add_7_OUT> created at line 112.
+    Found 31-bit adder for signal <bitIndex[30]_GND_22_o_add_14_OUT> created at line 127.
+    Found 1-bit 10-to-1 multiplexer for signal <bitIndex[3]_X_21_o_Mux_22_o> created at line 147.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred  56 D-type flip-flop(s).
+	inferred   2 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <UART_TX_CTRL> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port Read Only RAM                    : 1
+ 4x4-bit single-port Read Only RAM                     : 1
+# Multipliers                                          : 1
+ 16x4-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 62
+ 12-bit adder                                          : 2
+ 14-bit adder                                          : 1
+ 16-bit adder                                          : 7
+ 16-bit subtractor                                     : 2
+ 2-bit adder                                           : 1
+ 24-bit adder                                          : 1
+ 27-bit adder                                          : 1
+ 31-bit adder                                          : 2
+ 4-bit adder                                           : 42
+ 4-bit subtractor                                      : 1
+ 5-bit subtractor                                      : 1
+ 7-bit subtractor                                      : 1
+# Registers                                            : 53
+ 1-bit register                                        : 13
+ 10-bit register                                       : 1
+ 12-bit register                                       : 2
+ 14-bit register                                       : 1
+ 16-bit register                                       : 9
+ 2-bit register                                        : 2
+ 24-bit register                                       : 1
+ 27-bit register                                       : 1
+ 3-bit register                                        : 3
+ 31-bit register                                       : 3
+ 4-bit register                                        : 2
+ 48-bit register                                       : 1
+ 8-bit register                                        : 14
+# Comparators                                          : 45
+ 16-bit comparator greater                             : 2
+ 3-bit comparator greater                              : 3
+ 31-bit comparator equal                               : 1
+ 4-bit comparator greater                              : 39
+# Multiplexers                                         : 260
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 191
+ 12-bit 2-to-1 multiplexer                             : 3
+ 14-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 7
+ 16-bit 4-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 3
+ 24-bit 2-to-1 multiplexer                             : 1
+ 3-bit 2-to-1 multiplexer                              : 14
+ 3-bit 7-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 12
+ 4-bit 3-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 48-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 19
+ 8-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <C6> is unconnected in block <C2>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <strEnd_2> in Unit <BLUETOOTH> is equivalent to the following 33 FFs/Latches, which will be removed : <strEnd_4> <strEnd_5> <strEnd_6> <strEnd_7> <strEnd_8> <strEnd_9> <strEnd_10> <strEnd_11> <strEnd_12> <strEnd_13> <strEnd_14> <strEnd_15> <strEnd_16> <strEnd_17> <strEnd_18> <strEnd_19> <strEnd_20> <strEnd_21> <strEnd_22> <strEnd_23> <strEnd_24> <strEnd_25> <strEnd_26> <strEnd_27> <strEnd_28> <strEnd_29> <strEnd_30> <sendStr_1_4> <sendStr_1_5> <sendStr_1_6> <sendStr_1_7> <sendStr_2_5> <sendStr_2_7> 
+INFO:Xst:2261 - The FF/Latch <sendStr_3_0> in Unit <BLUETOOTH> is equivalent to the following 17 FFs/Latches, which will be removed : <sendStr_3_2> <sendStr_3_6> <sendStr_4_0> <sendStr_4_1> <sendStr_4_4> <sendStr_4_6> <sendStr_5_0> <sendStr_5_2> <sendStr_5_6> <sendStr_6_2> <sendStr_6_4> <sendStr_6_6> <sendStr_7_1> <sendStr_7_3> <sendStr_8_0> <sendStr_8_2> <sendStr_8_3> 
+INFO:Xst:2261 - The FF/Latch <sendStr_3_1> in Unit <BLUETOOTH> is equivalent to the following 29 FFs/Latches, which will be removed : <sendStr_3_3> <sendStr_3_4> <sendStr_3_5> <sendStr_3_7> <sendStr_4_2> <sendStr_4_3> <sendStr_4_5> <sendStr_4_7> <sendStr_5_1> <sendStr_5_3> <sendStr_5_4> <sendStr_5_5> <sendStr_5_7> <sendStr_6_0> <sendStr_6_1> <sendStr_6_3> <sendStr_6_5> <sendStr_6_7> <sendStr_7_0> <sendStr_7_2> <sendStr_7_4> <sendStr_7_5> <sendStr_7_6> <sendStr_7_7> <sendStr_8_1> <sendStr_8_4> <sendStr_8_5> <sendStr_8_6> <sendStr_8_7> 
+WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <Inst_UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <txData_9> (without init value) has a constant value of 1 in block <Inst_UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <strEnd_2> has a constant value of 0 in block <BLUETOOTH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sendStr_0_7> (without init value) has a constant value of 0 in block <BLUETOOTH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sendStr_3_0> (without init value) has a constant value of 1 in block <BLUETOOTH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <sendStr_3_1> (without init value) has a constant value of 0 in block <BLUETOOTH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_1<7:4>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_0<7:7>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_2<7:7>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_3<7:7>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_4<7:7>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_6<7:7>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_5<7:7>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_7<7:4>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+WARNING:Xst:2404 -  FFs/Latches <sendStr_8<7:4>> (without init value) have a constant value of 0 in block <GPIO_demo>.
+
+Synthesizing (advanced) Unit <GPIO_demo>.
+The following registers are absorbed into counter <tmrCntr>: 1 register on signal <tmrCntr>.
+The following registers are absorbed into counter <tmrVal>: 1 register on signal <tmrVal>.
+The following registers are absorbed into counter <strIndex>: 1 register on signal <strIndex>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_SSEG_CA> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <tmrVal>        |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <SSEG_CA>       |          |
+    -----------------------------------------------------------------------
+Unit <GPIO_demo> synthesized (advanced).
+
+Synthesizing (advanced) Unit <UART_TX_CTRL>.
+The following registers are absorbed into counter <bitTmr>: 1 register on signal <bitTmr>.
+The following registers are absorbed into counter <bitIndex>: 1 register on signal <bitIndex>.
+Unit <UART_TX_CTRL> synthesized (advanced).
+
+Synthesizing (advanced) Unit <anode_decoder>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_anode> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 4-word x 4-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <control>       |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <anode>         |          |
+    -----------------------------------------------------------------------
+Unit <anode_decoder> synthesized (advanced).
+
+Synthesizing (advanced) Unit <btn_debounce>.
+The following registers are absorbed into counter <btn1_cntr>: 1 register on signal <btn1_cntr>.
+The following registers are absorbed into counter <btn0_cntr>: 1 register on signal <btn0_cntr>.
+The following registers are absorbed into counter <btn2_cntr>: 1 register on signal <btn2_cntr>.
+The following registers are absorbed into counter <btn4_cntr>: 1 register on signal <btn4_cntr>.
+The following registers are absorbed into counter <btn3_cntr>: 1 register on signal <btn3_cntr>.
+Unit <btn_debounce> synthesized (advanced).
+
+Synthesizing (advanced) Unit <display_clk>.
+The following registers are absorbed into counter <cntval>: 1 register on signal <cntval>.
+Unit <display_clk> synthesized (advanced).
+
+Synthesizing (advanced) Unit <master_interface>.
+The following registers are absorbed into counter <count_wait>: 1 register on signal <count_wait>.
+The following registers are absorbed into counter <ss_count>: 1 register on signal <ss_count>.
+Unit <master_interface> synthesized (advanced).
+
+Synthesizing (advanced) Unit <spi_interface>.
+The following registers are absorbed into counter <spi_clk_count>: 1 register on signal <spi_clk_count>.
+Unit <spi_interface> synthesized (advanced).
+
+Synthesizing (advanced) Unit <two_bit_counter>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <two_bit_counter> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 16x8-bit single-port distributed Read Only RAM        : 1
+ 4x4-bit single-port distributed Read Only RAM         : 1
+# Multipliers                                          : 1
+ 16x4-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 46
+ 16-bit adder                                          : 1
+ 16-bit subtractor                                     : 1
+ 3-bit adder                                           : 14
+ 4-bit adder                                           : 27
+ 4-bit subtractor                                      : 1
+ 5-bit subtractor                                      : 1
+ 7-bit subtractor                                      : 1
+# Counters                                             : 15
+ 12-bit up counter                                     : 2
+ 14-bit up counter                                     : 1
+ 16-bit up counter                                     : 6
+ 2-bit up counter                                      : 1
+ 24-bit up counter                                     : 1
+ 27-bit up counter                                     : 1
+ 31-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+# Registers                                            : 259
+ Flip-Flops                                            : 259
+# Comparators                                          : 45
+ 16-bit comparator greater                             : 2
+ 3-bit comparator greater                              : 3
+ 31-bit comparator equal                               : 1
+ 4-bit comparator greater                              : 39
+# Multiplexers                                         : 249
+ 1-bit 10-to-1 multiplexer                             : 1
+ 1-bit 2-to-1 multiplexer                              : 191
+ 12-bit 2-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 1
+ 16-bit 4-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 3
+ 3-bit 2-to-1 multiplexer                              : 14
+ 3-bit 7-to-1 multiplexer                              : 1
+ 4-bit 2-to-1 multiplexer                              : 11
+ 4-bit 3-to-1 multiplexer                              : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+ 48-bit 2-to-1 multiplexer                             : 1
+ 7-bit 2-to-1 multiplexer                              : 2
+ 8-bit 2-to-1 multiplexer                              : 19
+ 8-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 3
+# Xors                                                 : 5
+ 1-bit xor2                                            : 5
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <sendStr_6_4> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_6_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_6_6> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_3_0> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_3_1> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_3_2> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_3_3> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_3_4> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_3_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_3_6> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_4_0> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_4_1> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_4_2> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_4_3> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_4_4> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_4_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_4_6> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_5_0> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_5_1> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_5_2> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_5_3> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_5_4> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_5_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_5_6> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_7_0> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_7_1> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_7_2> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_7_3> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_8_0> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_8_1> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_8_2> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_8_3> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_2> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_4> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_5> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_6> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_7> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_8> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_9> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_10> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_11> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_12> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_13> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_14> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_15> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_16> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_17> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_18> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_6_3> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_6_2> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_6_1> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_6_0> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_2_5> (without init value) has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_30> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_29> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_28> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_27> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_26> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_25> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_24> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_23> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_22> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_21> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_20> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <strEnd_19> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <txData_0> (without init value) has a constant value of 0 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <txData_9> (without init value) has a constant value of 1 in block <UART_TX_CTRL>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <GYRO/C1/FSM_0> on signal <RxTxSTATE[1:2]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ idle  | 00
+ rx_tx | 01
+ hold  | 10
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <BLUETOOTH/FSM_1> on signal <uartState[1:4]> with gray encoding.
+--------------------------
+ State        | Encoding
+--------------------------
+ rst_reg      | 0000
+ ld_init_str  | 0001
+ send_char    | 0011
+ rdy_low      | 0010
+ wait_rdy     | 0110
+ wait_btn     | 0111
+ ld_btn_str   | unreached
+ ld_up_str    | 1101
+ ld_down_str  | 1100
+ ld_left_str  | 0100
+ ld_right_str | 0101
+--------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <BLUETOOTH/Inst_UART_TX_CTRL/FSM_2> on signal <txState[1:2]> with user encoding.
+----------------------
+ State    | Encoding
+----------------------
+ rdy      | 00
+ load_bit | 01
+ send_bit | 10
+----------------------
+WARNING:Xst:1710 - FF/Latch <strEnd_0> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sendStr_1_3> (without init value) has a constant value of 1 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <previousSTATE_2> has a constant value of 0 in block <master_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <send_data_4> (without init value) has a constant value of 0 in block <master_interface>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <uartData_7> has a constant value of 0 in block <GPIO_demo>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <send_data_1> in Unit <master_interface> is equivalent to the following FF/Latch, which will be removed : <send_data_2> 
+INFO:Xst:2261 - The FF/Latch <strEnd_1> in Unit <GPIO_demo> is equivalent to the following 6 FFs/Latches, which will be removed : <sendStr_1_1> <sendStr_0_5> <sendStr_0_6> <sendStr_2_0> <sendStr_2_2> <sendStr_2_3> 
+INFO:Xst:2261 - The FF/Latch <strEnd_3> in Unit <GPIO_demo> is equivalent to the following 5 FFs/Latches, which will be removed : <sendStr_1_0> <sendStr_1_2> <sendStr_2_1> <sendStr_2_4> <sendStr_2_6> 
+
+Optimizing unit <transmit_controller> ...
+
+Optimizing unit <master_interface> ...
+
+Optimizing unit <spi_interface> ...
+
+Optimizing unit <display_controller> ...
+
+Optimizing unit <data_controller> ...
+
+Optimizing unit <GPIO_demo> ...
+
+Optimizing unit <btn_debounce> ...
+
+Optimizing unit <UART_TX_CTRL> ...
+WARNING:Xst:1710 - FF/Latch <BLUETOOTH/Inst_UART_TX_CTRL/txData_8> (without init value) has a constant value of 0 in block <transmit_controller>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_26> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_25> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_24> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_23> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_22> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_21> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_20> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_19> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_18> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_17> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_16> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_15> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_14> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_13> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_12> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_11> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_10> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_9> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_8> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_7> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_6> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_5> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_4> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_3> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_2> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_1> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrCntr_0> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrVal_3> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrVal_2> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrVal_1> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/tmrVal_0> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_15> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_14> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_13> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_12> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_11> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_10> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_9> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_8> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_7> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_6> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_5> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_4> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_3> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_2> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_1> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_cntr_0> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_15> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_14> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_13> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_12> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_11> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_10> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_9> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_8> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_7> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_6> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_5> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_4> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_3> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_2> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_1> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_cntr_0> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn0_reg> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:2677 - Node <BLUETOOTH/Inst_btn_debounce/btn2_reg> of sequential type is unconnected in block <transmit_controller>.
+WARNING:Xst:1710 - FF/Latch <GYRO/C0/count_wait_23> (without init value) has a constant value of 0 in block <transmit_controller>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block transmit_controller, actual ratio is 8.
+FlipFlop GYRO/C0/STATE_1 has been replicated 1 time(s)
+FlipFlop GYRO/C0/STATE_2 has been replicated 2 time(s)
+FlipFlop GYRO/C0/byte_count_0 has been replicated 1 time(s)
+FlipFlop GYRO/C0/byte_count_1 has been replicated 1 time(s)
+FlipFlop GYRO/C0/byte_count_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 375
+ Flip-Flops                                            : 375
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : transmit_controller.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1159
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 177
+#      LUT2                        : 24
+#      LUT3                        : 83
+#      LUT4                        : 42
+#      LUT5                        : 100
+#      LUT6                        : 252
+#      MUXCY                       : 231
+#      MUXF7                       : 6
+#      VCC                         : 1
+#      XORCY                       : 228
+# FlipFlops/Latches                : 375
+#      FD                          : 36
+#      FDE                         : 39
+#      FDR                         : 145
+#      FDRE                        : 150
+#      FDS                         : 4
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 26
+#      IBUF                        : 9
+#      OBUF                        : 17
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-2 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             375  out of  18224     2%  
+ Number of Slice LUTs:                  692  out of   9112     7%  
+    Number used as Logic:               692  out of   9112     7%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    756
+   Number with an unused Flip Flop:     381  out of    756    50%  
+   Number with an unused LUT:            64  out of    756     8%  
+   Number of fully used LUT-FF pairs:   311  out of    756    41%  
+   Number of unique control sets:        23
+
+IO Utilization: 
+ Number of IOs:                          29
+ Number of bonded IOBs:                  27  out of    232    11%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)   | Load  |
+-----------------------------------+-------------------------+-------+
+CLK                                | BUFGP                   | 373   |
+GYRO/C2/C1/cntval_15               | NONE(GYRO/C2/C4/count_1)| 2     |
+-----------------------------------+-------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -2
+
+   Minimum period: 5.371ns (Maximum Frequency: 186.185MHz)
+   Minimum input arrival time before clock: 6.497ns
+   Maximum output required time after clock: 33.313ns
+   Maximum combinational path delay: 35.575ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 5.371ns (frequency: 186.185MHz)
+  Total number of paths / destination ports: 7047 / 725
+-------------------------------------------------------------------------
+Delay:               5.371ns (Levels of Logic = 3)
+  Source:            GYRO/C0/count_wait_19 (FF)
+  Destination:       GYRO/C0/count_wait_22 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: GYRO/C0/count_wait_19 to GYRO/C0/count_wait_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.525   1.196  GYRO/C0/count_wait_19 (GYRO/C0/count_wait_19)
+     LUT5:I0->O            5   0.254   1.069  GYRO/C0/count_wait[23]_GND_7_o_equal_122_o<23>2 (GYRO/C0/count_wait[23]_GND_7_o_equal_122_o<23>1)
+     LUT6:I3->O           22   0.235   1.764  GYRO/C0/Reset_OR_DriverANDClockEnable361 (GYRO/C0/Reset_OR_DriverANDClockEnable)
+     LUT5:I0->O            1   0.254   0.000  GYRO/C0/count_wait_22_rstpot (GYRO/C0/count_wait_22_rstpot)
+     FD:D                      0.074          GYRO/C0/count_wait_22
+    ----------------------------------------
+    Total                      5.371ns (1.342ns logic, 4.029ns route)
+                                       (25.0% logic, 75.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'GYRO/C2/C1/cntval_15'
+  Clock period: 2.632ns (frequency: 379.939MHz)
+  Total number of paths / destination ports: 3 / 2
+-------------------------------------------------------------------------
+Delay:               2.632ns (Levels of Logic = 1)
+  Source:            GYRO/C2/C4/count_0 (FF)
+  Destination:       GYRO/C2/C4/count_0 (FF)
+  Source Clock:      GYRO/C2/C1/cntval_15 rising
+  Destination Clock: GYRO/C2/C1/cntval_15 rising
+
+  Data Path: GYRO/C2/C4/count_0 to GYRO/C2/C4/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             13   0.525   1.097  GYRO/C2/C4/count_0 (GYRO/C2/C4/count_0)
+     INV:I->O              1   0.255   0.681  GYRO/C2/C4/Mcount_count_xor<0>11_INV_0 (GYRO/C2/Result<0>1)
+     FDR:D                     0.074          GYRO/C2/C4/count_0
+    ----------------------------------------
+    Total                      2.632ns (0.854ns logic, 1.778ns route)
+                                       (32.4% logic, 67.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 332 / 324
+-------------------------------------------------------------------------
+Offset:              6.497ns (Levels of Logic = 3)
+  Source:            N_SW<0> (PAD)
+  Destination:       GYRO/C0/count_wait_22 (FF)
+  Destination Clock: CLK rising
+
+  Data Path: N_SW<0> to GYRO/C0/count_wait_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           155   1.328   2.823  N_SW_0_IBUF (N_SW_0_IBUF)
+     LUT6:I0->O           22   0.254   1.764  GYRO/C0/Reset_OR_DriverANDClockEnable361 (GYRO/C0/Reset_OR_DriverANDClockEnable)
+     LUT5:I0->O            1   0.254   0.000  GYRO/C0/count_wait_22_rstpot (GYRO/C0/count_wait_22_rstpot)
+     FD:D                      0.074          GYRO/C0/count_wait_22
+    ----------------------------------------
+    Total                      6.497ns (1.910ns logic, 4.587ns route)
+                                       (29.4% logic, 70.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'GYRO/C2/C1/cntval_15'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.154ns (Levels of Logic = 1)
+  Source:            N_SW<0> (PAD)
+  Destination:       GYRO/C2/C4/count_1 (FF)
+  Destination Clock: GYRO/C2/C1/cntval_15 rising
+
+  Data Path: N_SW<0> to GYRO/C2/C4/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           155   1.328   2.367  N_SW_0_IBUF (N_SW_0_IBUF)
+     FDR:R                     0.459          GYRO/C2/C4/count_0
+    ----------------------------------------
+    Total                      4.154ns (1.787ns logic, 2.367ns route)
+                                       (43.0% logic, 57.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'GYRO/C2/C1/cntval_15'
+  Total number of paths / destination ports: 106 / 11
+-------------------------------------------------------------------------
+Offset:              8.509ns (Levels of Logic = 4)
+  Source:            GYRO/C2/C4/count_1 (FF)
+  Destination:       N_SEG<5> (PAD)
+  Source Clock:      GYRO/C2/C1/cntval_15 rising
+
+  Data Path: GYRO/C2/C4/count_1 to N_SEG<5>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             14   0.525   1.582  GYRO/C2/C4/count_1 (GYRO/C2/C4/count_1)
+     LUT6:I0->O            1   0.254   0.682  GYRO/C2/C5/Mmux_digit13 (GYRO/C2/C5/Mmux_digit12)
+     LUT5:I4->O            7   0.254   1.365  GYRO/C2/C5/Mmux_digit14 (GYRO/C2/digit<0>)
+     LUT6:I0->O            1   0.254   0.681  GYRO/C2/C3/Mmux_seg_out6 (N_SEG_5_OBUF)
+     OBUF:I->O                 2.912          N_SEG_5_OBUF (N_SEG<5>)
+    ----------------------------------------
+    Total                      8.509ns (4.199ns logic, 4.310ns route)
+                                       (49.3% logic, 50.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 12908267432 / 11
+-------------------------------------------------------------------------
+Offset:              33.313ns (Levels of Logic = 38)
+  Source:            GYRO/C0/y_axis_data_0 (FF)
+  Destination:       N_SEG<3> (PAD)
+  Source Clock:      CLK rising
+
+  Data Path: GYRO/C0/y_axis_data_0 to N_SEG<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.525   1.042  GYRO/C0/y_axis_data_0 (GYRO/C0/y_axis_data_0)
+     LUT6:I2->O            1   0.254   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_lut<0>1 (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_lut<0>1)
+     MUXCY:S->O            1   0.215   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<0> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<1> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<2> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<3> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<4> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<5> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<6> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<7> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<8> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<9> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<10> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<11> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<12> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<13> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<13>)
+     XORCY:CI->O           8   0.206   1.220  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_xor<14> (GYRO/C2/C0/GND_10_o_GND_10_o_sub_12_OUT<14>)
+     LUT6:I2->O            9   0.254   1.252  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_243_o11 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_40_OUT_cy<0>)
+     LUT6:I2->O            3   0.254   1.221  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_263_o111 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_48_OUT_lut<3>)
+     LUT6:I0->O            8   0.254   1.172  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_283_o11 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_60_OUT_cy<0>)
+     LUT6:I3->O           11   0.235   1.267  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_307_o12 (GYRO/C2/C0/Madd_n0272_Madd_cy<0>)
+     LUT5:I2->O            3   0.235   1.196  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_307_o111 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_70_OUT_lut<3>)
+     LUT5:I0->O            3   0.254   1.221  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_327_o111 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_80_OUT_lut<3>)
+     LUT6:I0->O            6   0.254   1.306  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_80_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_80_o)
+     LUT6:I1->O            6   0.254   1.152  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_90_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_90_o)
+     LUT6:I2->O            6   0.254   1.104  GYRO/C2/C0/Mmux_unsigned_scaled_data[10]_unsigned_scaled_data[12]_MUX_389_o121 (GYRO/C2/C0/Madd_n0284_Madd_cy<0>)
+     LUT6:I3->O            5   0.235   1.296  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_112_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_112_o)
+     LUT6:I0->O            1   0.254   0.682  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_412_o121 (GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_412_o12)
+     LUT6:I5->O            5   0.254   1.296  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_122_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_122_o)
+     LUT6:I0->O            2   0.254   0.726  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_432_o121 (GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_432_o12)
+     LUT6:I5->O            4   0.254   0.912  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_132_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_132_o)
+     LUT6:I4->O            4   0.250   1.080  GYRO/C2/C0/GND_10_o_unsigned_scaled_data[12]_LessThan_142_o1 (GYRO/C2/C0/GND_10_o_unsigned_scaled_data[12]_LessThan_142_o)
+     LUT6:I2->O            1   0.254   0.958  GYRO/C2/C0/Mmux_bcd<11:0>31 (GYRO/C2/C0/Mmux_bcd<11:0>3)
+     LUT4:I0->O            2   0.254   0.834  GYRO/C2/C0/Mmux_bcd<11:0>32 (GYRO/C2/C0/bcd<11>)
+     LUT6:I4->O            2   0.250   0.726  GYRO/C2/C0/D1<2>5 (GYRO/C2/D1<0>)
+     LUT5:I4->O            1   0.254   0.000  GYRO/C2/C5/Mmux_digit35_G (N124)
+     MUXF7:I1->O           7   0.175   1.365  GYRO/C2/C5/Mmux_digit35 (GYRO/C2/digit<2>)
+     LUT6:I0->O            1   0.254   0.681  GYRO/C2/C3/Mmux_seg_out41 (N_SEG_3_OBUF)
+     OBUF:I->O                 2.912          N_SEG_3_OBUF (N_SEG<3>)
+    ----------------------------------------
+    Total                     33.313ns (9.604ns logic, 23.709ns route)
+                                       (28.8% logic, 71.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 7291941231 / 11
+-------------------------------------------------------------------------
+Delay:               35.575ns (Levels of Logic = 39)
+  Source:            N_SW<2> (PAD)
+  Destination:       N_SEG<3> (PAD)
+
+  Data Path: N_SW<2> to N_SEG<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            79   1.328   2.501  N_SW_2_IBUF (N_SW_2_IBUF)
+     LUT6:I0->O            1   0.254   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_lut<0>1 (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_lut<0>1)
+     MUXCY:S->O            1   0.215   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<0> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<1> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<2> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<3> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<4> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<5> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<6> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<7> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<8> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<9> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<10> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<11> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<12> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<13> (GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_cy<13>)
+     XORCY:CI->O           8   0.206   1.220  GYRO/C2/C0/Msub_GND_10_o_GND_10_o_sub_12_OUT<15:0>1_xor<14> (GYRO/C2/C0/GND_10_o_GND_10_o_sub_12_OUT<14>)
+     LUT6:I2->O            9   0.254   1.252  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_243_o11 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_40_OUT_cy<0>)
+     LUT6:I2->O            3   0.254   1.221  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_263_o111 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_48_OUT_lut<3>)
+     LUT6:I0->O            8   0.254   1.172  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_283_o11 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_60_OUT_cy<0>)
+     LUT6:I3->O           11   0.235   1.267  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_307_o12 (GYRO/C2/C0/Madd_n0272_Madd_cy<0>)
+     LUT5:I2->O            3   0.235   1.196  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_307_o111 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_70_OUT_lut<3>)
+     LUT5:I0->O            3   0.254   1.221  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_327_o111 (GYRO/C2/C0/Madd_GND_10_o_GND_10_o_add_80_OUT_lut<3>)
+     LUT6:I0->O            6   0.254   1.306  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_80_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_80_o)
+     LUT6:I1->O            6   0.254   1.152  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_90_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_90_o)
+     LUT6:I2->O            6   0.254   1.104  GYRO/C2/C0/Mmux_unsigned_scaled_data[10]_unsigned_scaled_data[12]_MUX_389_o121 (GYRO/C2/C0/Madd_n0284_Madd_cy<0>)
+     LUT6:I3->O            5   0.235   1.296  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_112_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_112_o)
+     LUT6:I0->O            1   0.254   0.682  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_412_o121 (GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_412_o12)
+     LUT6:I5->O            5   0.254   1.296  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_122_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_122_o)
+     LUT6:I0->O            2   0.254   0.726  GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_432_o121 (GYRO/C2/C0/Mmux_GND_10_o_GND_10_o_MUX_432_o12)
+     LUT6:I5->O            4   0.254   0.912  GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_132_o1 (GYRO/C2/C0/GND_10_o_GND_10_o_LessThan_132_o)
+     LUT6:I4->O            4   0.250   1.080  GYRO/C2/C0/GND_10_o_unsigned_scaled_data[12]_LessThan_142_o1 (GYRO/C2/C0/GND_10_o_unsigned_scaled_data[12]_LessThan_142_o)
+     LUT6:I2->O            1   0.254   0.958  GYRO/C2/C0/Mmux_bcd<11:0>31 (GYRO/C2/C0/Mmux_bcd<11:0>3)
+     LUT4:I0->O            2   0.254   0.834  GYRO/C2/C0/Mmux_bcd<11:0>32 (GYRO/C2/C0/bcd<11>)
+     LUT6:I4->O            2   0.250   0.726  GYRO/C2/C0/D1<2>5 (GYRO/C2/D1<0>)
+     LUT5:I4->O            1   0.254   0.000  GYRO/C2/C5/Mmux_digit35_G (N124)
+     MUXF7:I1->O           7   0.175   1.365  GYRO/C2/C5/Mmux_digit35 (GYRO/C2/digit<2>)
+     LUT6:I0->O            1   0.254   0.681  GYRO/C2/C3/Mmux_seg_out41 (N_SEG_3_OBUF)
+     OBUF:I->O                 2.912          N_SEG_3_OBUF (N_SEG<3>)
+    ----------------------------------------
+    Total                     35.575ns (10.407ns logic, 25.168ns route)
+                                       (29.3% logic, 70.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    5.371|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock GYRO/C2/C1/cntval_15
+--------------------+---------+---------+---------+---------+
+                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock        |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+--------------------+---------+---------+---------+---------+
+GYRO/C2/C1/cntval_15|    2.632|         |         |         |
+--------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.16 secs
+ 
+--> 
+
+Total memory usage is 269756 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  175 (   0 filtered)
+Number of infos    :   15 (   0 filtered)
+
